@@ -1,0 +1,77 @@
+$primary-font: 'Hind Guntur', sans-serif;
+$primary-color:#826362;
+
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing:border-box;
+	// background-image: url("../images/flower.jpg")
+	color: white;
+
+}
+
+body {
+	background-image: url("../images/flower.jpg")
+}
+
+.header-box {
+	
+	background-color: #826362;
+	width: 62%;
+	margin-top: 40%;
+	h1 {
+		display: block;
+		text-align: center;
+		font-size: 64px;
+		padding-left: 14px;
+		padding-right: 14px;
+		letter-spacing: 18px;
+		font-family: $primary-font;
+		color: white;
+	}
+}
+
+.index-btn {
+	background-color:#759e7C;
+	border:none;
+	display: block;
+	font-size:69px;
+	padding: 0px 60px;
+	margin-top: 35%;
+	letter-spacing: 8px;
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: $primary-font;
+	}
+}
+
+.topnav-right {
+	margin-left: 10px;
+	i {
+		size:20px;
+		display: block;
+		color: black;
+		// color: 
+		color: #D18D88;
+
+	}
+	a{
+		text-decoration: none;
+	}
+	span {
+		font-size: 30px;
+		display: block;
+		background-color: black;
+		font-family: $primary-font;
+		width: 11%;
+		left: 0;
+	}
+
+
+}
+
+.fa-user {
+	float: right;
+}
