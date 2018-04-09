@@ -9,15 +9,116 @@
 </head>
 <body>
 	<header>
-		<div class="topnav-left"></div>
-		<div class="topnav-center"></div>
-		<div class="topnav-right">
-			<a href="index.html"><i class="fa fa-home fa-5x"></i></a>
-			<span class="home">Home</span>
-			<i class="fa fa-user fa-5x"></i>
-			<span class="staff">Call staff</span>
+		<div class="header wrapper">
+			<div class="topnav left">
+				<a href="index.html"><i class="fa fa-home fa-5x"></i>
+				<span class="home">Home</span></a>
+			</div>
+			<div class="topnav center">
+
+			</div>
+			<div class="topnav right">
+				<i class="fa fa-user fa-5x"></i>
+				<span class="staff">Call staff</span>
+			</div>
+		</div>
+		<div id="menu">
+			<div class="early">
+				<span class="topletter">Early</span>
+				<span class="bottomletter">(before 3)</span>
+			</div>
+			<div class="all">
+				<span class="topletter">All day</span>
+				<span class="bottomletter">(midday onwards)</span>
+			</div>
+			<div class="drink">
+				<span class="beverage">Drink</span>
+			</div>
+		</div>
+		<div class="indication">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>
+				<span class="dot vegan"></span>
+				<p>Vegetarian</p>
+			</div>
+			<div>
+			<span class="dot gf"></span>
+			<p>Gluten Free</p>
+			</div>
+			<div>
+			<span class="dot df"></span>
+			<p>Dairy Free</p>
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
 		</div>
 	</header>
+	<main>
+		<h2>Early</h2>
+		<div class="wrapper">
+			<div class="product-wrap">
+				<div class="product">
+					
+					<img src="http://via.placeholder.com/180x180">
+					<p>Breakfast brushetta<br>$19   
+					<span class="dot gf"></span>
+					<span class="dot df"></span></p>
+					<section class="qty">
+						<input type="text" name="quantity" maxlength="9" value="1">
+					  	<div class="controls-wrapper">
+						  	<a href="#" class="plus">+</a>
+						    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+					
+				</div>
+				<div class="product">
+			
+					<img src="http://via.placeholder.com/180x180">
+					<p>Breakfast brushetta<br>$19   
+					<span class="dot gf"></span>
+					<span class="dot df"></span></p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				
+			</div>
+
+			<div class="border-box">
+				<div class="price-wrap">
+					<div class="order-list">
+						<h3>Order</h3>
+						<hr>
+					</div>
+					<div class="total">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						
+					</div>
+					
+				</div>
+				<button >Order Now</button>
+			</div>
+		</div>
+	</main>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.js"> </script> 
 	<script type="text/javascript" src="js/script.js"></script>

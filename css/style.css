@@ -5,7 +5,13 @@
   color: white; }
 
 body {
+  width: 100%;
   background-image: url("../images/flower.jpg"); }
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .header-box {
   background-color: #826362;
@@ -34,24 +40,154 @@ body {
     text-decoration: none;
     font-family: "Hind Guntur", sans-serif; }
 
-.topnav-right {
-  margin-left: 10px; }
-  .topnav-right i {
-    size: 20px;
-    display: block;
+.header {
+  padding-bottom: 18px; }
+
+.topnav {
+  margin-top: 1%;
+  width: 151px; }
+  .topnav i {
     color: black;
-    color: #D18D88; }
-  .topnav-right a {
-    text-decoration: none; }
-  .topnav-right span {
+    text-align: center;
+    display: block; }
+  .topnav span {
     font-size: 30px;
     display: block;
     background-color: black;
     font-family: "Hind Guntur", sans-serif;
-    width: 11%;
-    left: 0; }
+    width: 90%;
+    margin-top: 10px;
+    text-align: center; }
+  .topnav a {
+    text-decoration: none; }
 
-.fa-user {
+.left {
+  float: left; }
+
+.right {
   float: right; }
+
+#menu {
+  top: 10px;
+  display: flex;
+  font-size: 44px;
+  text-align: center;
+  font-family: "Hind Guntur", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 16px; }
+  #menu .early, #menu .all {
+    width: 24%;
+    display: block;
+    background-color: #D18D88; }
+    #menu .early .bottomletter, #menu .all .bottomletter {
+      font-size: 21px;
+      letter-spacing: 0;
+      display: block; }
+  #menu .drink {
+    display: block;
+    width: 22%;
+    background-color: #729E75;
+    padding: 8px; }
+    #menu .drink .beverage {
+      display: block; }
+
+.indication {
+  background-color: white;
+  display: flex;
+  padding-top: 12px; }
+  .indication p {
+    color: black;
+    display: inline-block; }
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block; }
+
+main {
+  background-color: white; }
+
+h2 {
+  color: black;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 30px;
+  margin-left: 23px;
+  display: block;
+  padding-bottom: 10px; }
+
+.wrapper {
+  display: flex; }
+
+.product-wrap {
+  width: 68%;
+  margin-left: 23px;
+  display: flex; }
+  .product-wrap .product {
+    width: 38%;
+    margin-left: 0px; }
+    .product-wrap .product p {
+      color: black;
+      font-family: "Hind Guntur", sans-serif;
+      font-size: 21px; }
+    .product-wrap .product .qty {
+      display: flex; }
+      .product-wrap .product .qty [name=quantity] {
+        background: transparent;
+        border: 0;
+        width: 1em;
+        font-size: 2em;
+        text-align: center;
+        order: 2;
+        color: black; }
+      .product-wrap .product .qty .minus, .product-wrap .product .qty .plus {
+        display: inline-block;
+        font-size: 2.9em;
+        background: white;
+        width: 35px;
+        height: 30px;
+        text-align: center;
+        line-height: 0.8em;
+        position: relative;
+        color: #826362;
+        text-decoration: none; }
+      .product-wrap .product .qty .minus {
+        order: 1;
+        width: 40px; }
+      .product-wrap .product .qty .plus {
+        order: 3;
+        height: 20px; }
+      .product-wrap .product .qty .add-btn {
+        background-color: #636363;
+        border: none;
+        font-family: "Hind Guntur", sans-serif;
+        font-size: 30px;
+        display: block;
+        margin-left: 0px;
+        order: 4; }
+
+.border-box {
+  width: 32%;
+  margin-right: 23px; }
+  .border-box .price-wrap {
+    border: 1px solid black; }
+    .border-box .price-wrap .order-list h3 {
+      padding-top: 20px;
+      text-align: center;
+      color: black;
+      font-family: "Hind Guntur", sans-serif;
+      font-size: 31px; }
+    .border-box .price-wrap .order-list hr {
+      width: 65%;
+      border: 0.7px solid black; }
+  .border-box button {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #636363;
+    border: none;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 29px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,9 +12,15 @@ $primary-color:#826362;
 }
 
 body {
+	width:100%;
 	background-image: url("../images/flower.jpg")
 }
-
+.header::after {
+	content:'';
+	display:table;
+	clear: both;
+	
+}
 .header-box {
 	
 	background-color: #826362;
@@ -46,32 +52,211 @@ body {
 		font-family: $primary-font;
 	}
 }
-
-.topnav-right {
-	margin-left: 10px;
-	i {
-		size:20px;
-		display: block;
+.header{
+	padding-bottom: 18px;
+}
+.topnav {
+	margin-top:1%;
+	width:151px;
+	i{
 		color: black;
-		// color: 
-		color: #D18D88;
+		text-align: center;
+		display:block;
+		
+	}
 
-	}
-	a{
-		text-decoration: none;
-	}
 	span {
 		font-size: 30px;
 		display: block;
 		background-color: black;
 		font-family: $primary-font;
-		width: 11%;
-		left: 0;
+		width: 90%;
+		margin-top:10px;
+		text-align:center;	
 	}
-
-
+	a{
+		text-decoration: none;
+	}
 }
 
-.fa-user {
+.left {
+	float: left;
+}
+
+.right {
 	float: right;
+}
+
+#menu {
+	top:10px;
+	display:flex;
+	font-size:44px;
+	text-align:center;
+	font-family:$primary-font;
+	letter-spacing:4px;
+	padding-bottom:16px;
+
+	.early, .all {
+		width:24%;
+		display:block;
+		background-color:#D18D88;
+		.topletter{
+		}
+		.bottomletter{
+			font-size:21px;
+			letter-spacing:0;
+			display:block;
+			
+		}
+	}
+	.drink {
+		display:block;
+		width:22%;
+		background-color:#729E75;
+		padding:8px;
+		// float:right;	
+		.beverage{
+			display:block;
+		}
+
+	}
+	.early {
+		// float:left;
+	}
+}
+
+.indication {
+	background-color:white;
+	display:flex;
+	padding-top: 12px;
+	p{
+		color:black;
+		display:inline-block;
+	}
+	.vegan {
+
+	}
+}
+
+.dot {
+		height: 25px;
+		width: 25px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+	}
+main {
+	background-color:white;
+	
+}
+h2{
+	color:black;
+	font-family:$primary-font;
+	font-size:30px;
+	margin-left:23px;
+	display:block;
+	padding-bottom:10px;
+
+	}
+.wrapper{
+	display:flex;
+
+}
+.product-wrap{
+	width:68%;
+	margin-left:23px;
+	display:flex;
+	.product {
+		width:38%;
+		margin-left:0px;
+
+		img{
+
+		}
+		
+			p{
+				color:black;
+				font-family:$primary-font;
+				font-size:21px;
+				
+			}
+			.dot {
+
+			}
+		.qty{
+			display: flex;
+			
+			[name=quantity]{
+				background: transparent;
+				border: 0;
+				width: 1em;
+				font-size: 2em;
+				text-align:center;
+				order:2;
+				color: black;
+
+				}
+			.minus,.plus{ 
+				display: inline-block; 
+				font-size: 2.9em;
+				background: white;
+				width: 35px;
+				height:30px;
+				text-align: center;
+				line-height: 0.8em;
+				position: relative;
+				color:#826362;
+				text-decoration: none;
+			}
+			.minus{
+				order:1;
+				width: 40px;
+			}
+			.plus{
+				order:3;
+				height:20px;
+			}
+
+		
+			.add-btn{
+				background-color:#636363;
+				border:none;
+				font-family:$primary-font;
+				font-size:30px;
+				display:block;
+				margin-left:0px;
+				order:4;
+			}
+		}
+	}
+}
+
+.border-box{
+	width:32%;
+	margin-right: 23px;
+	.price-wrap{
+ 		border: 1px solid black;
+		.order-list{
+			h3{
+				padding-top:20px;
+				text-align:center;
+				color:black;
+				font-family:$primary-font;
+				font-size: 31px;
+			}
+			hr{
+				width:65%;
+				border: 0.7px solid black;
+			}
+		}
+	}
+	button{
+		width:100%;
+		display:block;
+		margin:0 auto;
+		background-color:#636363;
+		border:none;
+		font-family:$primary-font;
+		font-size:29px;
+	}
 }
