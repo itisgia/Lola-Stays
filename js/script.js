@@ -6,6 +6,7 @@ var incrementMinus;
 var Plus  = $(".plus");
 var Minus = $(".minus");
 var incrementPlus = Plus.click(function() {
+	event.preventDefault();
 	var $n = $(this)
 		.parent(".controls-wrapper")
 		.parent(".qty")
@@ -14,6 +15,7 @@ var incrementPlus = Plus.click(function() {
 });
 
 var incrementMinus = Minus.click(function() {
+	event.preventDefault();
 		var $n = $(this)
 		.parent(".controls-wrapper")
 		.parent(".qty")

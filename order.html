@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.css">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
 	<title>Order</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -24,15 +26,15 @@
 		</div>
 		<div id="menu">
 			<div class="early">
-				<span class="topletter">Early</span>
-				<span class="bottomletter">(before 3)</span>
+				<a href="#morning"><p class="topletter">Early</span>
+				<p class="bottomletter">(before 3)</span></a>
 			</div>
 			<div class="all">
-				<span class="topletter">All day</span>
-				<span class="bottomletter">(midday onwards)</span>
+				<a href="#allday"><span class="topletter">All day</span>
+				<span class="bottomletter">(midday onwards)</span></a>
 			</div>
 			<div class="drink">
-				<span class="beverage">Drink</span>
+				<a href="#drink"><span class="beverage">Drink</span></a>
 			</div>
 		</div>
 		<div class="indication">
@@ -61,29 +63,110 @@
 		</div>
 	</header>
 	<main>
-		<h2>Early</h2>
-		<div class="wrapper">
+	<div class="big-box">
+		<div class="left-wrap">
+		<div class="morning">
+			<h2 id="morning">Early</h2>
 			<div class="product-wrap">
-				<div class="product">
-					
-					<img src="http://via.placeholder.com/180x180">
+				<div class="product">					<img src="images/bb.jpeg">
 					<p>Breakfast brushetta<br>$19   
-					<span class="dot gf"></span>
+					<span class="dot vegan"></span>
 					<span class="dot df"></span></p>
 					<section class="qty">
-						<input type="text" name="quantity" maxlength="9" value="1">
+						<input name="quantity" value="1" class="quantity">
 					  	<div class="controls-wrapper">
-						  	<a href="#" class="plus">+</a>
-						    <a href="#" class="minus">-</a>
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
 					  	</div>
   						<button class="add-btn">Add</button>
 					</section>
-					
 				</div>
 				<div class="product">
+					
+					<img src="images/sa.jpeg">
+					<p>Smashed avo on rye<br>$18  
+					<span class="dot vegan"></span>
+					<span class="dot gf"></span>
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">
+					
+					<img src="images/tb.jpeg">
+					<p>Toasted Brioche<br>$16   
+					<span class="dot gf"></span>
+					<span class="dot vegan"></span></p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">
+					
+					<img src="images/wg.jpg">
+					<p>Willted Greens<br>$13   
+					<span class="dot vegan"></span>
+					<span class="dot df"></span></p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">				
+					<img src="images/mb.jpeg">
+					<p>Mixed bowl<br>$12.5   
+					<span class="dot vegan"></span>
+					<span class="dot gf"></span>
+					<span class="dot df"></p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">				
+					<img src="images/sg.jpg">
+					<p>Seeded Granola<br>$12.5   
+					<span class="dot vegan"></span>
+					<span class="dot gf"></span>
+					<span class="dot df"></p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+			</div>
 			
-					<img src="http://via.placeholder.com/180x180">
-					<p>Breakfast brushetta<br>$19   
+		</div>
+		<div class="allday">
+			<h2 id="allday">All day</h2>
+			<div class="product-wrap">
+				<div class="product">	
+					<img src="images/cs.jpeg">
+					<p>Cobb Salad<br>$22 
+					<span class="dot vegan"></span>  
 					<span class="dot gf"></span>
 					<span class="dot df"></span></p>
 					<section class="qty">
@@ -95,9 +178,88 @@
   						<button class="add-btn">Add</button>
 					</section>
 				</div>
-				
+				<div class="product">
+					
+					<img src="images/pt.jpeg">
+					<p>Pork Taco<br>$19   
+					<span class="dot gf"></span>
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">
+					
+					<img src="images/pk.jpg">
+					<p>Pork belly & Kimchi<br>$15  
+					<span class="dot gf"></span>
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">
+					
+					<img src="images/br.jpeg">
+					<p>Beef Ribs<br>$15 
+					<span class="dot gf"></span>
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
 			</div>
-
+		</div>
+		<div class="drink">
+			<h2 id="drink">Drink</h2>
+			<div class="product-wrap">
+				<div class="product">
+					
+					<img src="images/ds.jpeg">
+					<p>Fizzy Drinks<br>$4   
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+				<div class="product">
+					
+					<img src="images/dc.jpeg">
+					<p>Coffee<br>$5   
+					</p>
+					<section class="qty">
+						<input name="quantity" value="1" class="quantity">
+					  	<div class="controls-wrapper">
+					  	<a href="#" class="plus">+</a>
+					    <a href="#" class="minus">-</a>
+					  	</div>
+  						<button class="add-btn">Add</button>
+					</section>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="right-wrap">
 			<div class="border-box">
 				<div class="price-wrap">
 					<div class="order-list">
@@ -115,12 +277,20 @@
 					</div>
 					
 				</div>
-				<button >Order Now</button>
+				<a href="finished.html"><button >Order Now</button></a>
 			</div>
 		</div>
+	</div>	
 	</main>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.js"> </script> 
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
+<footer>
+	<div class="cart">
+		<i class="fa fa-shopping-cart fa-2x"></i>
+
+
+	</div>
+</footer>
 </html>

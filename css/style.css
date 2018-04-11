@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   color: white; }
+  * img {
+    width: 180px;
+    height: 180px; }
 
 body {
   width: 100%;
@@ -50,16 +53,17 @@ body {
     color: black;
     text-align: center;
     display: block; }
-  .topnav span {
+  .topnav span, .topnav p {
     font-size: 30px;
     display: block;
     background-color: black;
     font-family: "Hind Guntur", sans-serif;
     width: 90%;
     margin-top: 10px;
-    text-align: center; }
-  .topnav a {
+    text-align: center;
     text-decoration: none; }
+  .topnav a {
+    text-decoration: none !important; }
 
 .left {
   float: left; }
@@ -67,22 +71,40 @@ body {
 .right {
   float: right; }
 
+.message {
+  position: absolute;
+  left: 253px;
+  top: 57px;
+  font-size: 46px;
+  display: block;
+  background-color: black;
+  font-family: "Hind Guntur", sans-serif;
+  width: 34%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none; }
+
 #menu {
   top: 10px;
   display: flex;
   font-size: 44px;
   text-align: center;
-  font-family: "Hind Guntur", sans-serif;
+  font-family: sans-serif;
   letter-spacing: 4px;
   padding-bottom: 16px; }
-  #menu .early, #menu .all {
+  #menu .early, #menu .all, #menu .drink {
     width: 24%;
     display: block;
     background-color: #D18D88; }
-    #menu .early .bottomletter, #menu .all .bottomletter {
+    #menu .early .topletter, #menu .all .topletter, #menu .drink .topletter {
+      display: block; }
+    #menu .early .bottomletter, #menu .all .bottomletter, #menu .drink .bottomletter {
       font-size: 21px;
       letter-spacing: 0;
       display: block; }
+    #menu .early a, #menu .all a, #menu .drink a {
+      text-decoration: none; }
   #menu .drink {
     display: block;
     width: 22%;
@@ -94,7 +116,8 @@ body {
 .indication {
   background-color: white;
   display: flex;
-  padding-top: 12px; }
+  padding-top: 12px;
+  padding-bottom: 13px; }
   .indication p {
     color: black;
     display: inline-block; }
@@ -106,88 +129,217 @@ body {
   border-radius: 50%;
   display: inline-block; }
 
-main {
-  background-color: white; }
+.df {
+  background-color: #996069; }
 
-h2 {
-  color: black;
-  font-family: "Hind Guntur", sans-serif;
-  font-size: 30px;
-  margin-left: 23px;
-  display: block;
-  padding-bottom: 10px; }
+.vegan {
+  background-color: #63a86d; }
 
-.wrapper {
+.gf {
+  background-color: #b2ba46; }
+
+.qty {
   display: flex; }
-
-.product-wrap {
-  width: 68%;
-  margin-left: 23px;
-  display: flex; }
-  .product-wrap .product {
-    width: 38%;
-    margin-left: 0px; }
-    .product-wrap .product p {
-      color: black;
-      font-family: "Hind Guntur", sans-serif;
-      font-size: 21px; }
-    .product-wrap .product .qty {
-      display: flex; }
-      .product-wrap .product .qty [name=quantity] {
-        background: transparent;
-        border: 0;
-        width: 1em;
-        font-size: 2em;
-        text-align: center;
-        order: 2;
-        color: black; }
-      .product-wrap .product .qty .minus, .product-wrap .product .qty .plus {
-        display: inline-block;
-        font-size: 2.9em;
-        background: white;
-        width: 35px;
-        height: 30px;
-        text-align: center;
-        line-height: 0.8em;
-        position: relative;
-        color: #826362;
-        text-decoration: none; }
-      .product-wrap .product .qty .minus {
-        order: 1;
-        width: 40px; }
-      .product-wrap .product .qty .plus {
-        order: 3;
-        height: 20px; }
-      .product-wrap .product .qty .add-btn {
-        background-color: #636363;
-        border: none;
-        font-family: "Hind Guntur", sans-serif;
-        font-size: 30px;
-        display: block;
-        margin-left: 0px;
-        order: 4; }
-
-.border-box {
-  width: 32%;
-  margin-right: 23px; }
-  .border-box .price-wrap {
-    border: 1px solid black; }
-    .border-box .price-wrap .order-list h3 {
-      padding-top: 20px;
-      text-align: center;
-      color: black;
-      font-family: "Hind Guntur", sans-serif;
-      font-size: 31px; }
-    .border-box .price-wrap .order-list hr {
-      width: 65%;
-      border: 0.7px solid black; }
-  .border-box button {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+  .qty [name=quantity] {
+    background: transparent;
+    border: 0;
+    width: 1em;
+    font-size: 2em;
+    text-align: center;
+    order: 2;
+    color: black; }
+  .qty .minus, .qty .plus {
+    display: inline-block;
+    font-size: 2.9em;
+    background: white;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    line-height: 0.8em;
+    position: relative;
+    color: #826362;
+    text-decoration: none; }
+  .qty .minus {
+    order: 1;
+    width: 40px; }
+  .qty .plus {
+    order: 3;
+    height: 20px; }
+  .qty .add-btn {
     background-color: #636363;
     border: none;
     font-family: "Hind Guntur", sans-serif;
-    font-size: 29px; }
+    font-size: 22px;
+    display: block;
+    margin-left: 0px;
+    width: 80px;
+    order: 4; }
+
+main {
+  background-color: white; }
+
+.big-box {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px; }
+  .big-box .left-wrap {
+    width: 65%;
+    margin: 0; }
+    .big-box .left-wrap .morning, .big-box .left-wrap .allday, .big-box .left-wrap .drink {
+      padding-bottom: 12px; }
+      .big-box .left-wrap .morning h2, .big-box .left-wrap .allday h2, .big-box .left-wrap .drink h2 {
+        color: black;
+        margin-left: 7%;
+        padding-bottom: 12px;
+        font-family: "Hind Guntur", sans-serif; }
+      .big-box .left-wrap .morning .product-wrap, .big-box .left-wrap .allday .product-wrap, .big-box .left-wrap .drink .product-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0; }
+        .big-box .left-wrap .morning .product-wrap .product, .big-box .left-wrap .allday .product-wrap .product, .big-box .left-wrap .drink .product-wrap .product {
+          padding-bottom: 10px; }
+      .big-box .left-wrap .morning p, .big-box .left-wrap .allday p, .big-box .left-wrap .drink p {
+        color: black;
+        font-family: "Hind Guntur", sans-serif;
+        font-size: 19px; }
+  .big-box .right-wrap {
+    width: 35%;
+    margin-top: 38px;
+    position: fixed;
+    right: 0; }
+    .big-box .right-wrap .border-box {
+      margin-right: 23px; }
+      .big-box .right-wrap .border-box .price-wrap {
+        border: 1px solid black; }
+        .big-box .right-wrap .border-box .price-wrap .order-list h3 {
+          padding-top: 20px;
+          text-align: center;
+          color: black;
+          font-family: "Hind Guntur", sans-serif;
+          font-size: 31px;
+          display: block;
+          padding-bottom: 10px; }
+        .big-box .right-wrap .border-box .price-wrap .order-list hr {
+          width: 65%;
+          border: 0.7px solid black; }
+      .big-box .right-wrap .border-box a {
+        text-decoration: none; }
+      .big-box .right-wrap .border-box button {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        background-color: #636363;
+        border: none;
+        font-family: "Hind Guntur", sans-serif;
+        font-size: 29px;
+        margin-top: 12px; }
+      .big-box .right-wrap .border-box .progress-bar-fill {
+        height: 22px;
+        background-color: red;
+        display: block; }
+
+.bar-wrapper {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  width: 100%;
+  padding-bottom: 100px; }
+  .bar-wrapper .progress-bar {
+    width: 70%;
+    background-color: #D18D88;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2); }
+  .bar-wrapper .progress-bar-fill {
+    display: block;
+    background-color: #c0d6cb;
+    height: 22px;
+    border-radius: 3px;
+    animation: loading 2s ease-in-out forwards;
+    margin: 0; }
+@keyframes loading {
+  to {
+    width: 100%; } }
+.queue {
+  width: 70%;
+  padding-bottom: 130px; }
+  .queue h4 {
+    font-family: "Hind Guntur", sans-serif;
+    color: #71BDB3;
+    font-size: 50px; }
+
+.finish-hr {
+  width: 70%;
+  border: 0.7px solid black; }
+
+.help {
+  width: 87%;
+  padding-top: 100px;
+  padding-bottom: 130px; }
+  .help p {
+    font-family: "Hind Guntur", sans-serif;
+    color: black;
+    font-size: 50px;
+    display: block;
+    text-align: center; }
+
+footer {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .header-box {
+    width: 300px; }
+
+  body {
+    background-size: 400px; }
+
+  .header-box {
+    margin-top: 200px;
+    width: 250px; }
+    .header-box h1 {
+      letter-spacing: 2px;
+      font-size: 34px; }
+
+  .index-btn {
+    font-size: 34px;
+    padding: 0px 23px; }
+
+  .topnav i {
+    font-size: 2em; }
+  .topnav span {
+    font-size: 21px; }
+
+  #menu {
+    display: block;
+    font-size: 28px; }
+    #menu .early, #menu .all, #menu .drink {
+      width: 53%;
+      margin-bottom: 15px; }
+
+  .big-box .left-wrap {
+    width: 59%;
+    margin: 0 auto; }
+    .big-box .left-wrap img {
+      max-width: 100%; }
+    .big-box .left-wrap .add-btn {
+      width: 75px; }
+  .big-box .right-wrap {
+    margin-top: 55px;
+    width: 50%;
+    display: none; }
+    .big-box .right-wrap .border-box {
+      margin-right: 0; }
+
+  footer {
+    display: block;
+    background-color: #bcc9d8;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+    footer .cart i {
+      color: white; } }
 
 /*# sourceMappingURL=style.css.map */
