@@ -31,3 +31,12 @@ var incrementMinus = Minus.click(function() {
 $(".right").click(function(){
     alert("One of our staff will be there soon!");
 });
+
+
+//mobile version footer(cart)
+$(document).ready(function(){
+	$(".cart").click(function(){
+		$(".footer-pop").toggle();
+	})
+});
+

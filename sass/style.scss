@@ -12,8 +12,14 @@ $primary-color:#826362;
 		width:180px;
 		height:180px;
 	}
+	max-width: 1150px;
 
 }
+
+html{
+	max-height: 100vh;
+	overflow-y:hidden;
+}	
 
 body {
 	width:100%;
@@ -296,6 +302,7 @@ main {
 				margin-left: 7%;
 				padding-bottom:12px;
 				font-family:$primary-font;
+				font-size: 32px;
 			}
 			.product-wrap{
 			display:flex;
@@ -317,13 +324,14 @@ main {
 	}
 	.right-wrap{
 		width:35%;
-		margin-top: 38px;
-		position: fixed;
+		margin-top: 55px;
+		// position: fixed;
 		right: 0;
 		.border-box{
 			margin-right: 23px;
 			.price-wrap{
 		 		border: 1px solid black;
+		 		height: 559px;
 				.order-list{
 					h3{
 						padding-top:20px;
@@ -421,17 +429,10 @@ footer{
 	display: none;
 }
 @media only screen and (max-width: 767px){
-	.header-box {
-		width: 300px;
+	// .header-box {
+	// 	width: 300px;
 
-	}
-
-	body {
-		background-size: 400px;	
-	}
-	.header{
-		
-	}
+	// }
 	.header-box {
 		margin-top: 200px;
 		width: 250px;
@@ -439,24 +440,48 @@ footer{
 			letter-spacing: 2px;
 			font-size: 34px;
 
+			}
 		}
-	}
-
 	.index-btn{
-		font-size: 34px;
-		padding: 0px 23px;
+			font-size: 34px;
+			padding: 0px 23px;
+		}.index-btn{
+			font-size: 34px;
+			padding: 0px 23px;
+		}
+
+	body {
+		background-size: 400px;	
 	}
-	.topnav{
+	main{
+		padding-bottom: 42px;
+	}
+	.header{
+		.header-box {
+		margin-top: 200px;
+		width: 250px;
+		h1{
+			letter-spacing: 2px;
+			font-size: 34px;
+
+			}
+		}
+
+		.topnav{
+			
+			i{
+	    	font-size: 2em;
+
+			}
+			span{
+				font-size: 21px;
+			}
+
+		}
+
 		
-		i{
-    	font-size: 2em;
-
-		}
-		span{
-			font-size: 21px;
-		}
-
 	}
+
 
 	#menu{
 		display: block;
@@ -466,10 +491,21 @@ footer{
 			margin-bottom: 15px;
 		}
 	}
+	.indication{
+		.dot{
+				height: 15px;
+	    		width: 15px;
+	    	}
+	}
 	.big-box{
 		.left-wrap{
-			width: 59%;
+			width: 100%;
 			margin: 0 auto;
+			.moring,.all,.drink{
+				h2{
+				font-size: 22px;
+				}
+			}
 			img{
 				max-width: 100%;
 				
@@ -480,14 +516,76 @@ footer{
 			}
 		}
 		.right-wrap{
-			margin-top: 55px;
+			margin-top: 70px;
 			width: 50%;
 			display: none;
 			.border-box{
 				margin-right: 0;
 			}
 		}
+		.product-wrap{
+			img{
+				width: 130px;
+				height: 130px;
+				display: block;
+			}
+			.product{
+				width: 50%;
 
+				p{
+					font-size: 14px;
+					text-align: center;
+				}
+				.dot{
+					margin-left: 9px;
+					width: 14px;
+					height:14px;
+				}
+			.qty{
+					 width: 132px;
+			
+				[name=quantity]{
+						    width: 17px;
+						font-size: 1.2em;
+						}
+				.minus,.plus{ 
+
+						font-size: 1.9em;
+						width: 16px;
+
+					}	
+				.plus{
+				margin-right: 9px;
+
+				}
+				.add-btn{
+						font-size:17px;
+						width: 45px;
+					}
+			}
+			
+			}
+		}
+
+	}
+	.message {
+		left: 88px;
+    	top: 122px;
+		font-size: 30px;
+		width: 44%;
+		font-size: 24px;
+	}
+	.queue {
+		    padding-bottom: 84px;
+		h4{
+			font-size: 35px;
+	    	text-align: center;
+	    }
+	}
+	.help{
+		p{
+			font-size: 27px;
+		}
 	}
 	footer{
 		display: block;
@@ -499,6 +597,29 @@ footer{
 		.cart{
 			i{
 				color: white;
+				margin-left: 12px;
+			}
+			span{
+				margin-right: 10px;
+				letter-spacing: 3px;
+				display: inline-block;
+    			margin-left: 12px;
+    			font-family: $primary-font;
+
+			}
+			.footer-btn{
+				float: right;
+				background-color:#636363;
+				border:none;
+				font-family:$primary-font;
+				font-size: 20px;
+				padding: 0px 12px;
+				border-radius: 0px;
+
+			}
+			.footer-pop{
+				display: none;
+				height: 205px;
 			}
 		}
 	}

@@ -2,10 +2,15 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  color: white; }
+  color: white;
+  max-width: 1150px; }
   * img {
     width: 180px;
     height: 180px; }
+
+html {
+  max-height: 100vh;
+  overflow-y: hidden; }
 
 body {
   width: 100%;
@@ -193,7 +198,8 @@ main {
         color: black;
         margin-left: 7%;
         padding-bottom: 12px;
-        font-family: "Hind Guntur", sans-serif; }
+        font-family: "Hind Guntur", sans-serif;
+        font-size: 32px; }
       .big-box .left-wrap .morning .product-wrap, .big-box .left-wrap .allday .product-wrap, .big-box .left-wrap .drink .product-wrap {
         display: flex;
         flex-wrap: wrap;
@@ -207,13 +213,13 @@ main {
         font-size: 19px; }
   .big-box .right-wrap {
     width: 35%;
-    margin-top: 38px;
-    position: fixed;
+    margin-top: 55px;
     right: 0; }
     .big-box .right-wrap .border-box {
       margin-right: 23px; }
       .big-box .right-wrap .border-box .price-wrap {
-        border: 1px solid black; }
+        border: 1px solid black;
+        height: 559px; }
         .big-box .right-wrap .border-box .price-wrap .order-list h3 {
           padding-top: 20px;
           text-align: center;
@@ -290,12 +296,6 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .header-box {
-    width: 300px; }
-
-  body {
-    background-size: 400px; }
-
-  .header-box {
     margin-top: 200px;
     width: 250px; }
     .header-box h1 {
@@ -306,9 +306,25 @@ footer {
     font-size: 34px;
     padding: 0px 23px; }
 
-  .topnav i {
+  .index-btn {
+    font-size: 34px;
+    padding: 0px 23px; }
+
+  body {
+    background-size: 400px; }
+
+  main {
+    padding-bottom: 42px; }
+
+  .header .header-box {
+    margin-top: 200px;
+    width: 250px; }
+    .header .header-box h1 {
+      letter-spacing: 2px;
+      font-size: 34px; }
+  .header .topnav i {
     font-size: 2em; }
-  .topnav span {
+  .header .topnav span {
     font-size: 21px; }
 
   #menu {
@@ -318,19 +334,67 @@ footer {
       width: 53%;
       margin-bottom: 15px; }
 
+  .indication .dot {
+    height: 15px;
+    width: 15px; }
+
   .big-box .left-wrap {
-    width: 59%;
+    width: 100%;
     margin: 0 auto; }
+    .big-box .left-wrap .moring h2, .big-box .left-wrap .all h2, .big-box .left-wrap .drink h2 {
+      font-size: 22px; }
     .big-box .left-wrap img {
       max-width: 100%; }
     .big-box .left-wrap .add-btn {
       width: 75px; }
   .big-box .right-wrap {
-    margin-top: 55px;
+    margin-top: 70px;
     width: 50%;
     display: none; }
     .big-box .right-wrap .border-box {
       margin-right: 0; }
+  .big-box .product-wrap img {
+    width: 130px;
+    height: 130px;
+    display: block; }
+  .big-box .product-wrap .product {
+    width: 50%; }
+    .big-box .product-wrap .product p {
+      font-size: 14px;
+      text-align: center; }
+    .big-box .product-wrap .product .dot {
+      margin-left: 9px;
+      width: 14px;
+      height: 14px; }
+    .big-box .product-wrap .product .qty {
+      width: 132px; }
+      .big-box .product-wrap .product .qty [name=quantity] {
+        width: 17px;
+        font-size: 1.2em; }
+      .big-box .product-wrap .product .qty .minus, .big-box .product-wrap .product .qty .plus {
+        font-size: 1.9em;
+        width: 16px; }
+      .big-box .product-wrap .product .qty .plus {
+        margin-right: 9px; }
+      .big-box .product-wrap .product .qty .add-btn {
+        font-size: 17px;
+        width: 45px; }
+
+  .message {
+    left: 88px;
+    top: 122px;
+    font-size: 30px;
+    width: 44%;
+    font-size: 24px; }
+
+  .queue {
+    padding-bottom: 84px; }
+    .queue h4 {
+      font-size: 35px;
+      text-align: center; }
+
+  .help p {
+    font-size: 27px; }
 
   footer {
     display: block;
@@ -340,6 +404,24 @@ footer {
     bottom: 0;
     width: 100%; }
     footer .cart i {
-      color: white; } }
+      color: white;
+      margin-left: 12px; }
+    footer .cart span {
+      margin-right: 10px;
+      letter-spacing: 3px;
+      display: inline-block;
+      margin-left: 12px;
+      font-family: "Hind Guntur", sans-serif; }
+    footer .cart .footer-btn {
+      float: right;
+      background-color: #636363;
+      border: none;
+      font-family: "Hind Guntur", sans-serif;
+      font-size: 20px;
+      padding: 0px 12px;
+      border-radius: 0px; }
+    footer .cart .footer-pop {
+      display: none;
+      height: 205px; } }
 
 /*# sourceMappingURL=style.css.map */
