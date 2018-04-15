@@ -2,19 +2,23 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  color: white;
-  max-width: 1150px; }
+  color: white; }
   * img {
     width: 180px;
     height: 180px; }
 
 html {
   max-height: 100vh;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  max-width: 1150px; }
 
 body {
   width: 100%;
   background-image: url("../images/flower.jpg"); }
+
+header {
+  height: 28vh;
+  position: relative; }
 
 .header::after {
   content: '';
@@ -77,18 +81,18 @@ body {
   float: right; }
 
 .message {
-  position: absolute;
-  left: 253px;
-  top: 57px;
-  font-size: 46px;
   display: block;
+  font-size: 46px;
   background-color: black;
   font-family: "Hind Guntur", sans-serif;
   width: 34%;
   padding: 10px;
   margin-top: 10px;
-  text-align: center;
-  text-decoration: none; }
+  text-align: center; }
+
+main {
+  height: 72vh;
+  background-color: white; }
 
 #menu {
   top: 10px;
@@ -121,8 +125,8 @@ body {
 .indication {
   background-color: white;
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 13px; }
+  padding-top: 18px;
+  padding-bottom: 23px; }
   .indication p {
     color: black;
     display: inline-block; }
@@ -180,18 +184,18 @@ body {
     width: 80px;
     order: 4; }
 
-main {
-  background-color: white; }
-
 .big-box {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 10px; }
+  padding-top: 10px;
+  height: 100%; }
   .big-box .left-wrap {
     width: 65%;
-    margin: 0; }
+    margin: 0;
+    overflow-y: scroll;
+    margin-top: 20px; }
     .big-box .left-wrap .morning, .big-box .left-wrap .allday, .big-box .left-wrap .drink {
       padding-bottom: 12px; }
       .big-box .left-wrap .morning h2, .big-box .left-wrap .allday h2, .big-box .left-wrap .drink h2 {
@@ -213,13 +217,13 @@ main {
         font-size: 19px; }
   .big-box .right-wrap {
     width: 35%;
-    margin-top: 55px;
+    margin-top: 88px;
     right: 0; }
     .big-box .right-wrap .border-box {
       margin-right: 23px; }
       .big-box .right-wrap .border-box .price-wrap {
         border: 1px solid black;
-        height: 559px; }
+        height: 51vh; }
         .big-box .right-wrap .border-box .price-wrap .order-list h3 {
           padding-top: 20px;
           text-align: center;
@@ -247,54 +251,59 @@ main {
         background-color: red;
         display: block; }
 
-.bar-wrapper {
-  padding-top: 160px;
-  padding-bottom: 60px;
-  width: 100%;
-  padding-bottom: 100px; }
-  .bar-wrapper .progress-bar {
-    width: 70%;
-    background-color: #D18D88;
-    padding: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2); }
-  .bar-wrapper .progress-bar-fill {
-    display: block;
-    background-color: #c0d6cb;
-    height: 22px;
-    border-radius: 3px;
-    animation: loading 2s ease-in-out forwards;
-    margin: 0; }
+.main-scroll {
+  height: 70vh;
+  overflow-y: scroll; }
+  .main-scroll .bar-wrapper {
+    padding-top: 160px;
+    padding-bottom: 60px;
+    width: 100%;
+    padding-bottom: 100px; }
+    .main-scroll .bar-wrapper .progress-bar {
+      width: 70%;
+      background-color: #D18D88;
+      padding: 3px;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2); }
+    .main-scroll .bar-wrapper .progress-bar-fill {
+      display: block;
+      background-color: #c0d6cb;
+      height: 22px;
+      border-radius: 3px;
+      animation: loading 2s ease-in-out forwards;
+      margin: 0; }
 @keyframes loading {
   to {
     width: 100%; } }
-.queue {
-  width: 70%;
-  padding-bottom: 130px; }
-  .queue h4 {
-    font-family: "Hind Guntur", sans-serif;
-    color: #71BDB3;
-    font-size: 50px; }
-
-.finish-hr {
-  width: 70%;
-  border: 0.7px solid black; }
-
-.help {
-  width: 87%;
-  padding-top: 100px;
-  padding-bottom: 130px; }
-  .help p {
-    font-family: "Hind Guntur", sans-serif;
-    color: black;
-    font-size: 50px;
-    display: block;
-    text-align: center; }
+  .main-scroll .queue {
+    width: 70%;
+    padding-bottom: 130px; }
+    .main-scroll .queue h4 {
+      font-family: "Hind Guntur", sans-serif;
+      color: #71BDB3;
+      font-size: 50px;
+      text-align: center; }
+  .main-scroll .finish-hr {
+    width: 70%;
+    border: 0.7px solid black; }
+  .main-scroll .help {
+    width: 87%;
+    padding-top: 100px;
+    padding-bottom: 130px; }
+    .main-scroll .help p {
+      font-family: "Hind Guntur", sans-serif;
+      color: black;
+      font-size: 50px;
+      display: block;
+      text-align: center; }
 
 footer {
   display: none; }
 
 @media only screen and (max-width: 767px) {
+  header {
+    height: auto; }
+
   .header-box {
     margin-top: 200px;
     width: 250px; }
@@ -328,11 +337,13 @@ footer {
     font-size: 21px; }
 
   #menu {
-    display: block;
-    font-size: 28px; }
+    display: flex;
+    font-size: 18px;
+    padding-bottom: 0; }
     #menu .early, #menu .all, #menu .drink {
-      width: 53%;
-      margin-bottom: 15px; }
+      width: 38%; }
+    #menu .bottomletter {
+      font-size: 13px !important; }
 
   .indication .dot {
     height: 15px;
@@ -381,20 +392,22 @@ footer {
         width: 45px; }
 
   .message {
-    left: 88px;
-    top: 122px;
     font-size: 30px;
     width: 44%;
     font-size: 24px; }
 
-  .queue {
-    padding-bottom: 84px; }
-    .queue h4 {
-      font-size: 35px;
+  .main-scroll .bar-wrapper {
+    padding-top: 60px;
+    padding-bottom: 30px; }
+  .main-scroll .queue {
+    padding-bottom: 30px; }
+    .main-scroll .queue h4 {
+      font-size: 26px;
       text-align: center; }
-
-  .help p {
-    font-size: 27px; }
+  .main-scroll .help {
+    padding-top: 45px; }
+    .main-scroll .help p {
+      font-size: 30px; }
 
   footer {
     display: block;
@@ -423,5 +436,12 @@ footer {
     footer .cart .footer-pop {
       display: none;
       height: 205px; } }
+@media only screen and (min-width: 1170px) {
+  header {
+    height: auto; }
+
+  .indication {
+    padding-top: 18px;
+    padding-bottom: 23px; } }
 
 /*# sourceMappingURL=style.css.map */
