@@ -215,6 +215,27 @@ main {
         color: black;
         font-family: "Hind Guntur", sans-serif;
         font-size: 19px; }
+    .big-box .left-wrap .sides {
+      font-family: "Hind Guntur", sans-serif;
+      width: 90%; }
+      .big-box .left-wrap .sides h3 {
+        font-size: 28px;
+        color: #D18D88;
+        text-decoration: underline; }
+      .big-box .left-wrap .sides .sides-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .big-box .left-wrap .sides .sides-wrap span {
+          font-size: 23px;
+          color: black;
+          margin: 0; }
+        .big-box .left-wrap .sides .sides-wrap button {
+          font-size: 23px;
+          padding: 3px;
+          color: #636363;
+          border: 3px solid;
+          background-color: white; }
   .big-box .right-wrap {
     width: 35%;
     margin-top: 88px;
