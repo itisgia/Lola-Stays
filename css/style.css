@@ -25,10 +25,32 @@ header {
   display: table;
   clear: both; }
 
+.option {
+  margin-top: 30px; }
+  .option .lang button {
+    padding: 0 30px;
+    color: white;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 30px;
+    background-color: #7c7b7b;
+    border-style: none;
+    border-radius: 0; }
+  .option .english {
+    float: left;
+    margin-left: 10px; }
+  .option .maori {
+    float: right;
+    margin-right: 10px; }
+
+.option::after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .header-box {
   background-color: #826362;
   width: 62%;
-  margin-top: 40%; }
+  margin-top: 30%; }
   .header-box h1 {
     display: block;
     text-align: center;
@@ -39,15 +61,15 @@ header {
     font-family: "Hind Guntur", sans-serif;
     color: white; }
 
-.index-btn {
+.index-btn, .index-btn1 {
   background-color: #759e7C;
   border: none;
   display: block;
   font-size: 69px;
   padding: 0px 60px;
-  margin-top: 35%;
+  margin-top: 15%;
   letter-spacing: 8px; }
-  .index-btn a {
+  .index-btn a, .index-btn1 a {
     color: white;
     text-decoration: none;
     font-family: "Hind Guntur", sans-serif; }
@@ -338,8 +360,11 @@ footer {
   header {
     height: auto; }
 
+  .option .lang button {
+    font-size: 15px; }
+
   .header-box {
-    margin-top: 200px;
+    margin-top: 52%;
     width: 250px; }
     .header-box h1 {
       letter-spacing: 2px;
@@ -349,8 +374,8 @@ footer {
     font-size: 34px;
     padding: 0px 23px; }
 
-  .index-btn {
-    font-size: 34px;
+  .index-btn1 {
+    font-size: 22px;
     padding: 0px 23px; }
 
   body {

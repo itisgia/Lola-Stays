@@ -31,8 +31,39 @@ header{
 	height: 28vh;
 	position: relative;
 }
+
 .header::after {
 	content:'';
+	display:table;
+	clear: both;
+	
+}
+.option{
+	margin-top: 30px;
+	.lang{
+		button{
+			padding: 0 30px;
+			color: white;
+			font-family: $primary-font;
+			font-size: 30px;
+			background-color:#7c7b7b;
+			border-style: none;
+			border-radius: 0;
+
+		}
+		
+	}
+	.english{
+		float: left;
+		margin-left: 10px;
+	}
+	.maori{
+		float: right;
+		margin-right: 10px;
+	}
+}
+.option::after{
+		content:'';
 	display:table;
 	clear: both;
 	
@@ -41,7 +72,7 @@ header{
 	
 	background-color: #826362;
 	width: 62%;
-	margin-top: 40%;
+	margin-top: 30%;
 	h1 {
 		display: block;
 		text-align: center;
@@ -54,19 +85,22 @@ header{
 	}
 }
 
-.index-btn {
+.index-btn,.index-btn1 {
 	background-color:#759e7C;
 	border:none;
 	display: block;
 	font-size:69px;
 	padding: 0px 60px;
-	margin-top: 35%;
+	margin-top: 15%;
 	letter-spacing: 8px;
 	a {
 		color: white;
 		text-decoration: none;
 		font-family: $primary-font;
 	}
+}
+.index-btn1{
+
 }
 .header{
 	padding-bottom: 18px;
@@ -494,8 +528,15 @@ footer{
 		height: auto;
 
 	}
+	.option{
+		.lang{
+			button{
+				font-size: 15px;
+			}
+		}
+	}
 	.header-box {
-		margin-top: 200px;
+		margin-top: 52%;
 		width: 250px;
 		h1{
 			letter-spacing: 2px;
@@ -506,8 +547,9 @@ footer{
 	.index-btn{
 			font-size: 34px;
 			padding: 0px 23px;
-		}.index-btn{
-			font-size: 34px;
+		}
+	.index-btn1{
+			font-size: 22px;
 			padding: 0px 23px;
 		}
 
