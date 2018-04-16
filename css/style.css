@@ -217,7 +217,7 @@ main {
         font-size: 19px; }
     .big-box .left-wrap .sides {
       font-family: "Hind Guntur", sans-serif;
-      width: 90%; }
+      width: 92%; }
       .big-box .left-wrap .sides h3 {
         font-size: 28px;
         color: #D18D88;
@@ -225,7 +225,8 @@ main {
       .big-box .left-wrap .sides .sides-wrap {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; }
+        justify-content: space-between;
+        width: 93%; }
         .big-box .left-wrap .sides .sides-wrap span {
           font-size: 23px;
           color: black;
@@ -236,26 +237,38 @@ main {
           color: #636363;
           border: 3px solid;
           background-color: white; }
+    .big-box .left-wrap .aday {
+      width: 95%; }
   .big-box .right-wrap {
     width: 35%;
     margin-top: 88px;
     right: 0; }
     .big-box .right-wrap .border-box {
-      margin-right: 23px; }
+      margin-right: 23px;
+      width: 89%; }
       .big-box .right-wrap .border-box .price-wrap {
         border: 1px solid black;
-        height: 51vh; }
-        .big-box .right-wrap .border-box .price-wrap .order-list h3 {
+        height: 51vh;
+        position: relative;
+        width: 100%; }
+        .big-box .right-wrap .border-box .price-wrap .order-list h3, .big-box .right-wrap .border-box .price-wrap .total h3 {
           padding-top: 20px;
           text-align: center;
           color: black;
           font-family: "Hind Guntur", sans-serif;
           font-size: 31px;
           display: block;
-          padding-bottom: 10px; }
-        .big-box .right-wrap .border-box .price-wrap .order-list hr {
+          padding-bottom: 1px; }
+        .big-box .right-wrap .border-box .price-wrap .order-list hr, .big-box .right-wrap .border-box .price-wrap .total hr {
           width: 65%;
-          border: 0.7px solid black; }
+          border: 0.5px solid black; }
+        .big-box .right-wrap .border-box .price-wrap .total {
+          bottom: 10%;
+          position: absolute;
+          left: 0;
+          right: 0; }
+          .big-box .right-wrap .border-box .price-wrap .total hr {
+            border: 0.5px solid black; }
       .big-box .right-wrap .border-box a {
         text-decoration: none; }
       .big-box .right-wrap .border-box button {
@@ -375,10 +388,16 @@ footer {
     margin: 0 auto; }
     .big-box .left-wrap .moring h2, .big-box .left-wrap .all h2, .big-box .left-wrap .drink h2 {
       font-size: 22px; }
+    .big-box .left-wrap .drink {
+      padding-bottom: 43px; }
     .big-box .left-wrap img {
       max-width: 100%; }
     .big-box .left-wrap .add-btn {
       width: 75px; }
+    .big-box .left-wrap .sides .sides-wrap span {
+      font-size: 14px; }
+    .big-box .left-wrap .sides .sides-wrap button {
+      font-size: 13px; }
   .big-box .right-wrap {
     margin-top: 70px;
     width: 50%;
@@ -463,6 +482,12 @@ footer {
 
   .indication {
     padding-top: 18px;
-    padding-bottom: 23px; } }
+    padding-bottom: 23px; }
+
+  .sides {
+    width: 90% !important; }
+
+  .price-wrap hr {
+    width: 28% !important; } }
 
 /*# sourceMappingURL=style.css.map */

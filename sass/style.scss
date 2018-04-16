@@ -329,16 +329,18 @@ main{
 		}
 	.sides{
 		font-family: $primary-font;
-		width: 90%;
+		width: 92%;
 		h3{
 			font-size: 28px;
     		color: #D18D88;
     		text-decoration:underline;
 		}
+
 		.sides-wrap{
 			display: flex;
 			flex-wrap:wrap;
 			justify-content: space-between;
+			width: 93%;
 
 			span{
 				font-size: 23px;
@@ -355,6 +357,9 @@ main{
 			}
 		}
 	}
+	.aday{
+		width: 95%;
+	}
 	}
 	.right-wrap{
 		width:35%;
@@ -363,10 +368,13 @@ main{
 		right: 0;
 		.border-box{
 			margin-right: 23px;
+			width: 89%;
 			.price-wrap{
 		 		border: 1px solid black;
 		 		height: 51vh;
-		 			.order-list{
+		 		position: relative;
+		 		width: 100%;
+		 			.order-list, .total{
 						h3{
 							padding-top:20px;
 							text-align:center;
@@ -374,13 +382,23 @@ main{
 							font-family:$primary-font;
 							font-size: 31px;
 							display: block;
-	   						padding-bottom: 10px;
+	   						padding-bottom: 1px;
 						}
 						hr{
 							width:65%;
-							border: 0.7px solid black;
+							border: 0.5px solid black;
 						}
-				}
+					}
+					.total{
+						bottom: 10%;
+						position: absolute;
+						left: 0;
+						right: 0;
+						hr{
+							border: 0.5px solid black;
+						}
+						
+					}
 			}
 			a{
 				text-decoration:none;
@@ -553,6 +571,9 @@ footer{
 				font-size: 22px;
 				}
 			}
+			.drink{
+				padding-bottom: 43px;
+			}
 			img{
 				max-width: 100%;
 				
@@ -561,7 +582,18 @@ footer{
 				width: 75px;
 
 			}
+			.sides{
+				.sides-wrap{
+					span{
+						font-size: 14px;
+					}
+					button{
+						font-size: 13px;
+					}
+				}
+			}
 		}
+
 		.right-wrap{
 			margin-top: 70px;
 			width: 50%;
@@ -599,7 +631,6 @@ footer{
 
 						font-size: 1.9em;
 						width: 16px;
-
 					}	
 				.plus{
 				margin-right: 9px;
@@ -691,6 +722,16 @@ footer{
 		padding-top: 18px;
 	    padding-bottom: 23px;
 	}
+	.sides{
+		width: 90%!important;
+		.sides-wrap{
 
+		}
+	}
+	.price-wrap{
+		hr{
+			width: 28% !important;
+		}
+	}
 }
 
