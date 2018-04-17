@@ -20,6 +20,34 @@ header {
   height: 28vh;
   position: relative; }
 
+.header {
+  padding-bottom: 18px; }
+
+.topnav {
+  margin-top: 1%;
+  width: 151px; }
+  .topnav i {
+    color: black;
+    text-align: center;
+    display: block; }
+  .topnav span, .topnav p {
+    font-size: 30px;
+    display: block;
+    background-color: black;
+    font-family: "Hind Guntur", sans-serif;
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none; }
+  .topnav a {
+    text-decoration: none !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 .header::after {
   content: '';
   display: table;
@@ -73,34 +101,6 @@ header {
     color: white;
     text-decoration: none;
     font-family: "Hind Guntur", sans-serif; }
-
-.header {
-  padding-bottom: 18px; }
-
-.topnav {
-  margin-top: 1%;
-  width: 151px; }
-  .topnav i {
-    color: black;
-    text-align: center;
-    display: block; }
-  .topnav span, .topnav p {
-    font-size: 30px;
-    display: block;
-    background-color: black;
-    font-family: "Hind Guntur", sans-serif;
-    width: 90%;
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none; }
-  .topnav a {
-    text-decoration: none !important; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
 
 .message {
   display: block;

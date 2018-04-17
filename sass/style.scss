@@ -1,36 +1,7 @@
-$primary-font: 'Hind Guntur', sans-serif;
-$primary-color:#826362;
+@import "variables";
+@import "base_folder/base";
+@import "base_folder/header";
 
-
-* {
-	margin: 0 auto;
-	padding: 0;
-	box-sizing:border-box;
-	// background-image: url("../images/flower.jpg")
-	color: white;
-	img {
-		width:180px;
-		height:180px;
-	}
-	
-
-}
-
-html{
-	max-height: 100vh;
-	overflow-y:hidden;
-	max-width: 1150px;
-
-}	
-
-body {
-	width:100%;
-	background-image: url("../images/flower.jpg")
-}
-header{
-	height: 28vh;
-	position: relative;
-}
 
 .header::after {
 	content:'';
@@ -101,41 +72,6 @@ header{
 }
 .index-btn1{
 
-}
-.header{
-	padding-bottom: 18px;
-}
-.topnav {
-	margin-top:1%;
-	width:151px;
-	i{
-		color: black;
-		text-align: center;
-		display:block;
-		
-	}
-
-	span, p {
-		font-size: 30px;
-		display: block;
-		background-color: black;
-		font-family: $primary-font;
-		width: 90%;
-		margin-top:10px;
-		text-align:center;	
-		text-decoration:none;
-	}
-	a{
-		text-decoration: none !important;
-	}
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
 }
 
 .message{
@@ -271,54 +207,6 @@ main{
 				order:4;
 			}
 		}
-
-// h2{
-// 	color:black;
-// 	font-family:$primary-font;
-// 	font-size:30px;
-// 	margin-left:23px;
-// 	display:block;
-// 	padding-bottom:10px;
-
-// 	}
-// .wrapper{
-// 	display:flex;
-
-// }
-// .product-wrap{
-// 	width:73%;
-// 	margin-left:23px;
-// 	display:flex;
-// 	flex-wrap: wrap;
-// 	.product {
-// 		width:38%;
-// 		margin-left:0px;
-
-// 		img{
-
-// 		}
-		
-// 			p{
-// 				color:black;
-// 				font-family:$primary-font;
-// 				font-size:23px;
-				
-// 			}
-// 			.dot {
-
-// 			}
-		
-// 		button{
-// 				background-color:#636363;
-// 				border:none;
-// 				font-family:$primary-font;
-// 				font-size:30px;
-// 				display:block;
-// 				margin-left:0px;
-// 		}
-// 	}
-// }
-
 
 
 .big-box{

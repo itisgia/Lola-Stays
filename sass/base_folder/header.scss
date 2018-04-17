@@ -1,0 +1,39 @@
+header{
+	height: 28vh;
+	position: relative;
+}
+.header{
+	padding-bottom: 18px;
+}
+.topnav {
+	margin-top:1%;
+	width:151px;
+	i{
+		color: black;
+		text-align: center;
+		display:block;
+		
+	}
+
+	span, p {
+		font-size: 30px;
+		display: block;
+		background-color: black;
+		font-family: $primary-font;
+		width: 90%;
+		margin-top:10px;
+		text-align:center;	
+		text-decoration:none;
+	}
+	a{
+		text-decoration: none !important;
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
