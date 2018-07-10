@@ -1,0 +1,19 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; }
+  * img {
+    width: 180px;
+    height: 180px; }
+
+html {
+  max-height: 100vh;
+  overflow-y: hidden;
+  max-width: 1150px; }
+
+body {
+  width: 100%;
+  background-image: url("../images/flower.jpg"); }
+
+/*# sourceMappingURL=base.css.map */

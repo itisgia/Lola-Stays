@@ -505,6 +505,9 @@ footer {
   header {
     height: auto; }
 
+  main {
+    height: 64vh; }
+
   .indication {
     padding-top: 18px;
     padding-bottom: 23px; }
@@ -513,6 +516,9 @@ footer {
     width: 90% !important; }
 
   .price-wrap hr {
-    width: 28% !important; } }
+    width: 28% !important; }
+
+  .right-wrap {
+    margin-top: 2% !important; } }
 
 /*# sourceMappingURL=style.css.map */

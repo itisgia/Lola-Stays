@@ -1,4 +1,4 @@
-@import "variables";
+@import "base_folder/variables";
 @import "base_folder/base";
 @import "base_folder/header";
 
@@ -7,7 +7,7 @@
 	content:'';
 	display:table;
 	clear: both;
-	
+
 }
 .option{
 	margin-top: 30px;
@@ -22,7 +22,7 @@
 			border-radius: 0;
 
 		}
-		
+
 	}
 	.english{
 		float: left;
@@ -37,10 +37,10 @@
 		content:'';
 	display:table;
 	clear: both;
-	
+
 }
 .header-box {
-	
+
 	background-color: #826362;
 	width: 62%;
 	margin-top: 30%;
@@ -109,8 +109,8 @@ main{
 			font-size:21px;
 			letter-spacing:0;
 			display:block;
-			
-		} 
+
+		}
 	a{
 		text-decoration:none;
 	}
@@ -120,7 +120,7 @@ main{
 		width:22%;
 		background-color:#729E75;
 		padding:8px;
-		// float:right;	
+		// float:right;
 		.beverage{
 			display:block;
 		}
@@ -163,7 +163,7 @@ main{
 	}
 	.qty{
 			display: flex;
-			
+
 		[name=quantity]{
 				background: transparent;
 				border: 0;
@@ -174,8 +174,8 @@ main{
 				color: black;
 
 				}
-		.minus,.plus{ 
-				display: inline-block; 
+		.minus,.plus{
+				display: inline-block;
 				font-size: 2.9em;
 				background: white;
 				width: 35px;
@@ -195,7 +195,7 @@ main{
 				height:20px;
 			}
 
-		
+
 		.add-btn{
 				background-color:#636363;
 				border:none;
@@ -235,7 +235,7 @@ main{
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:space-between;
-		
+
 		    margin:0;
 		    .product{
 		    	padding-bottom:10px;
@@ -319,7 +319,7 @@ main{
 						hr{
 							border: 0.5px solid black;
 						}
-						
+
 					}
 			}
 			a{
@@ -442,7 +442,7 @@ footer{
 		}
 
 	body {
-		background-size: 400px;	
+		background-size: 400px;
 	}
 	main{
 		padding-bottom: 42px;
@@ -459,7 +459,7 @@ footer{
 		}
 
 		.topnav{
-			
+
 			i{
 	    	font-size: 2em;
 
@@ -470,7 +470,7 @@ footer{
 
 		}
 
-		
+
 	}
 
 
@@ -480,7 +480,7 @@ footer{
 		padding-bottom: 0;
 		.early , .all, .drink {
 			width: 38%;
-		
+
 		}
 		.bottomletter{
 			font-size: 13px !important;
@@ -506,7 +506,7 @@ footer{
 			}
 			img{
 				max-width: 100%;
-				
+
 			}
 			.add-btn{
 				width: 75px;
@@ -552,16 +552,16 @@ footer{
 				}
 			.qty{
 					 width: 132px;
-			
+
 				[name=quantity]{
 						    width: 17px;
 						font-size: 1.2em;
 						}
-				.minus,.plus{ 
+				.minus,.plus{
 
 						font-size: 1.9em;
 						width: 16px;
-					}	
+					}
 				.plus{
 				margin-right: 9px;
 
@@ -571,13 +571,13 @@ footer{
 						width: 45px;
 					}
 			}
-			
+
 			}
 		}
 
 	}
 	.message {
-		
+
 		font-size: 30px;
 		width: 44%;
 		font-size: 24px;
@@ -587,7 +587,7 @@ footer{
 	.bar-wrapper {
 		padding-top:60px;
 		padding-bottom:30px;
-		}	
+		}
 
 	.queue{
 		padding-bottom: 30px;
@@ -602,7 +602,7 @@ footer{
 			font-size: 30px;
 		}
 	}
-	
+
 	}
 	footer{
 		display: block;
@@ -647,6 +647,9 @@ footer{
 	header{
 		height: auto;
 	}
+	main{
+		height: 64vh;
+	}
 
 	.indication{
 		padding-top: 18px;
@@ -663,5 +666,8 @@ footer{
 			width: 28% !important;
 		}
 	}
-}
 
+	.right-wrap{
+		margin-top: 2%!important;
+	}
+}
