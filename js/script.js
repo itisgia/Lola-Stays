@@ -61,3 +61,9 @@ $(document).ready(function(){
 		$(".footer-pop").toggle();
 	});
 });
+
+
+
+function draw() {
+	console.log('just checking');
+}
