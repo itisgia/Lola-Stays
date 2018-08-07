@@ -501,6 +501,13 @@ footer {
     footer .cart .footer-pop {
       display: none;
       height: 205px; } }
+
+
+/* js style */
+
+.nameOfFood {
+  color:black;
+}
 @media only screen and (min-width: 1170px) {
   header {
     height: auto; }
