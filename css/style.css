@@ -152,6 +152,12 @@ main {
   .indication p {
     color: black;
     display: inline-block; }
+  .indication .typeWrapper {
+    display: flex; }
+    .indication .typeWrapper .type {
+      margin: 0 30px; }
+      .indication .typeWrapper .type p {
+        font-family: "Hind Guntur", sans-serif; }
 
 .dot {
   height: 25px;

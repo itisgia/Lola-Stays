@@ -134,14 +134,18 @@ main{
 	display:flex;
 	padding-top: 18px;
 	padding-bottom: 23px;
-
-
 	p{
 		color:black;
 		display:inline-block;
 	}
-	.vegan {
-
+	.typeWrapper {
+		display: flex;
+		.type {
+			margin: 0 30px;
+			p {
+				font-family: $primary-font;
+			}
+		}
 	}
 }
 

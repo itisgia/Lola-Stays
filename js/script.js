@@ -14,8 +14,6 @@ $( document ).ready(function() {
         if (amount < 5 ) {
             $n.val(Number($n.val())+1 );
         }
-
-
     });
 
     var incrementMinus = Minus.click(function() {
@@ -38,26 +36,26 @@ $( document ).ready(function() {
          look = $(this)
             .parent(".qty")
             .parent(".product")
-            .find("p"); // targeting the name of e
+            .find(".name"); // targeting the name of e
          getValue = $(this)
              .parent(".qty")
              .parent(".product")
              .find(".quantity"); // targeting the value of e
-        addFoodList(); // function happens in line 52
-     });
+        addFoodList(); // function happens in line 48
 
+     });
 
   // adding food list to the right div box
     function addFoodList(){
         var newLine = '<div class="orderBox">';
             newLine += '	<p class="nameOfFood">';
-            newLine +=  look["0"].textContent +'x '+ getValue["0"].value  ;
+            newLine +=  look["0"].outerText +' x '+ getValue["0"].value  ;
             newLine += '</p>'
             newLine += '	<p class="orderNumber">';
             newLine +-' </p>  '
             newLine += '</div>';
         $('.foodList').append(newLine);
-    } // fires in line 41
+    } // fires in line 44
 
     //call staff
     $(".right").click(function(){
