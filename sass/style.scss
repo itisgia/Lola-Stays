@@ -311,8 +311,12 @@ main{
 							border: 0.5px solid black;
 						}
 						.foodList {
+							height: 30vh;
+							overflow-y: scroll;
 							.orderBox{
+								margin-top: 1%;
 								p{
+									text-align: center;
 									font-family:$primary-font;
 									font-size: 15px;
 									color: black;
@@ -320,6 +324,10 @@ main{
 							}
 						}
 					}
+					::-webkit-scrollbar {
+						    width: 0px;  /* remove scrollbar space */
+						    background: transparent;  /* optional: just make scrollbar invisible */
+						}
 					.total{
 						bottom: 10%;
 						position: absolute;

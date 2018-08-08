@@ -284,10 +284,21 @@ main {
         .big-box .right-wrap .border-box .price-wrap .order-list hr, .big-box .right-wrap .border-box .price-wrap .total hr {
           width: 65%;
           border: 0.5px solid black; }
-        .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox p, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox p {
-          font-family: "Hind Guntur", sans-serif;
-          font-size: 15px;
-          color: black; }
+        .big-box .right-wrap .border-box .price-wrap .order-list .foodList, .big-box .right-wrap .border-box .price-wrap .total .foodList {
+          height: 30vh;
+          overflow-y: scroll; }
+          .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox {
+            margin-top: 1%; }
+            .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox p, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox p {
+              text-align: center;
+              font-family: "Hind Guntur", sans-serif;
+              font-size: 15px;
+              color: black; }
+        .big-box .right-wrap .border-box .price-wrap ::-webkit-scrollbar {
+          width: 0px;
+          /* remove scrollbar space */
+          background: transparent;
+          /* optional: just make scrollbar invisible */ }
         .big-box .right-wrap .border-box .price-wrap .total {
           bottom: 10%;
           position: absolute;
