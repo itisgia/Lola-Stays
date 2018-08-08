@@ -284,6 +284,10 @@ main {
         .big-box .right-wrap .border-box .price-wrap .order-list hr, .big-box .right-wrap .border-box .price-wrap .total hr {
           width: 65%;
           border: 0.5px solid black; }
+        .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox p, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox p {
+          font-family: "Hind Guntur", sans-serif;
+          font-size: 15px;
+          color: black; }
         .big-box .right-wrap .border-box .price-wrap .total {
           bottom: 10%;
           position: absolute;
@@ -501,13 +505,6 @@ footer {
     footer .cart .footer-pop {
       display: none;
       height: 205px; } }
-
-
-/* js style */
-
-.nameOfFood {
-  color:black;
-}
 @media only screen and (min-width: 1170px) {
   header {
     height: auto; }

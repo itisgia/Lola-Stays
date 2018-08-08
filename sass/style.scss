@@ -310,6 +310,15 @@ main{
 							width:65%;
 							border: 0.5px solid black;
 						}
+						.foodList {
+							.orderBox{
+								p{
+									font-family:$primary-font;
+									font-size: 15px;
+									color: black;
+								}
+							}
+						}
 					}
 					.total{
 						bottom: 10%;

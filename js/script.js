@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     var look;
+    var getValue;
 
     var Plus  = $(".plus");
     var Minus = $(".minus");
@@ -35,20 +36,25 @@ $( document ).ready(function() {
 
      $('.add-btn').click(function(e){
          look = $(this)
-          .parent(".qty")
-          .parent(".product")
-          .find("p");
-          addFoodList();
+            .parent(".qty")
+            .parent(".product")
+            .find("p"); // targeting the name of e
+         getValue = $(this)
+             .parent(".qty")
+             .parent(".product")
+             .find(".quantity"); // targeting the value of e
+        addFoodList(); // function happens in line 52
      });
 
-  // adding food list
+
+  // adding food list to the right div box
     function addFoodList(){
         var newLine = '<div class="orderBox">';
             newLine += '	<p class="nameOfFood">';
-            newLine +=  look["0"].textContent ;
+            newLine +=  look["0"].textContent +'x '+ getValue["0"].value  ;
             newLine += '</p>'
-            newLine += '	<p class="orderNumber">2</p>';
-            newLine += '	<i class="fa fa-times"></i>';
+            newLine += '	<p class="orderNumber">';
+            newLine +-' </p>  '
             newLine += '</div>';
         $('.foodList').append(newLine);
     } // fires in line 41
@@ -67,9 +73,3 @@ $( document ).ready(function() {
     });
 
 });
-
-
-
-function draw() {
-	console.log('just checking');
-}
