@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     var look;
     var getValue;
-
+    var getPrice;
     var Plus  = $(".plus");
     var Minus = $(".minus");
     var incrementPlus = Plus.click(function() {
@@ -32,16 +32,21 @@ $( document ).ready(function() {
     // when the button is clicked, name and price are addded in the box
      var btns = document.getElementsByClassName('add-btn');
 
-     $('.add-btn').click(function(e){
+     $('.add-btn').click(function(getVal){
          look = $(this)
             .parent(".qty")
             .parent(".product")
-            .find(".name"); // targeting the name of e
+            .find(".name"); // targeting the name of its food name
          getValue = $(this)
              .parent(".qty")
              .parent(".product")
-             .find(".quantity"); // targeting the value of e
+             .find(".quantity"); // targeting the value of its food
+          getPrice = $(this)
+              .parent(".qty")
+              .parent(".product")
+              .find(".price");
         addFoodList(); // function happens in line 48
+        calculatePrice(); //line 54
 
      });
 
@@ -57,6 +62,11 @@ $( document ).ready(function() {
         $('.foodList').append(newLine);
     } // fires in line 44
 
+    function calculatePrice() {
+      var toString = getPrice["0"].innerHTML;
+      var toNumber = toString.replace(/[^0-9.]/g, "")
+      console.log(toNumber);
+    }
     //call staff
     $(".right").click(function(){
         alert("One of our staff will be there soon!");
