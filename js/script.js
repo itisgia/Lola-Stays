@@ -2,6 +2,7 @@ $( document ).ready(function() {
     var look;
     var getValue;
     var getPrice;
+    var priceArraY =[];
     var Plus  = $(".plus");
     var Minus = $(".minus");
     var incrementPlus = Plus.click(function() {
@@ -63,9 +64,11 @@ $( document ).ready(function() {
     } // fires in line 44
 
     function calculatePrice() {
-      var toString = getPrice["0"].innerHTML;
-      var toNumber = toString.replace(/[^0-9.]/g, "")
-      console.log(toNumber);
+        var toString = getPrice["0"].innerHTML;
+        var toNumber = toString.replace(/[^0-9.]/g, "");
+        var pricecal = ( toNumber * getValue["0"].value );
+        priceArraY.push(pricecal);
+        console.log(priceArraY);
     }
     //call staff
     $(".right").click(function(){
