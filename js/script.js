@@ -2,9 +2,12 @@ $( document ).ready(function() {
     var look;
     var getValue;
     var getPrice;
-    var priceArraY =[];
+    var priceArray =[];
+    var check =[];
+    var sum= 0;
     var Plus  = $(".plus");
     var Minus = $(".minus");
+
     var incrementPlus = Plus.click(function() {
         event.preventDefault();
         var $n = $(this)
@@ -31,8 +34,6 @@ $( document ).ready(function() {
 
 
     // when the button is clicked, name and price are addded in the box
-     var btns = document.getElementsByClassName('add-btn');
-
      $('.add-btn').click(function(getVal){
          look = $(this)
             .parent(".qty")
@@ -47,10 +48,9 @@ $( document ).ready(function() {
               .parent(".product")
               .find(".price");
         addFoodList(); // function happens in line 48
-        calculatePrice(); //line 54
-
+        calculatePrice();
+         //line 54
      });
-
   // adding food list to the right div box
     function addFoodList(){
         var newLine = '<div class="orderBox">';
@@ -61,15 +61,21 @@ $( document ).ready(function() {
             newLine +-' </p>  '
             newLine += '</div>';
         $('.foodList').append(newLine);
+        // calculatePrice();
     } // fires in line 44
 
     function calculatePrice() {
         var toString = getPrice["0"].innerHTML;
         var toNumber = toString.replace(/[^0-9.]/g, "");
         var pricecal = ( toNumber * getValue["0"].value );
-        priceArraY.push(pricecal);
-        console.log(priceArraY);
+        priceArray.push(pricecal);
+        console.log(priceArray.reduce(getSum));
     }
+
+    function getSum(total, num) {
+        return total + num
+    }
+
     //call staff
     $(".right").click(function(){
         alert("One of our staff will be there soon!");
@@ -82,5 +88,4 @@ $( document ).ready(function() {
             $(".footer-pop").toggle();
         });
     });
-
-});
+});//////// ENDS
