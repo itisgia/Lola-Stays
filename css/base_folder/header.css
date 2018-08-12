@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$primary-font".
-        on line 22 of C:\Users\Jon\Desktop\Lola-Stays-master\Lola-Stays\sass\base_folder\header.scss
+        on line 22 of C:\Users\Jon\Desktop\Lola-Stays\sass\base_folder\header.scss
 
 17: 
 18: 	span, p {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$primary-font".
 27: 	}
 
 Backtrace:
-C:\Users\Jon\Desktop\Lola-Stays-master\Lola-Stays\sass\base_folder\header.scss:22
+C:\Users\Jon\Desktop\Lola-Stays\sass\base_folder\header.scss:22
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-font\".\A         on line 22 of C:\Users\Jon\Desktop\Lola-Stays-master\Lola-Stays\sass\base_folder\header.scss\A \A 17: \A 18: 	span, p {\A 19: 		font-size: 30px;\A 20: 		display: block;\A 21: 		background-color: black;\A 22: 		font-family: $primary-font;\A 23: 		width: 90%;\A 24: 		margin-top:10px;\A 25: 		text-align:center;	\A 26: 		text-decoration:none;\A 27: 	}"; }
+  content: "Error: Undefined variable: \"$primary-font\".\A         on line 22 of C:\Users\Jon\Desktop\Lola-Stays\sass\base_folder\header.scss\A \A 17: \A 18: 	span, p {\A 19: 		font-size: 30px;\A 20: 		display: block;\A 21: 		background-color: black;\A 22: 		font-family: $primary-font;\A 23: 		width: 90%;\A 24: 		margin-top:10px;\A 25: 		text-align:center;	\A 26: 		text-decoration:none;\A 27: 	}"; }

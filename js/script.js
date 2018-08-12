@@ -68,8 +68,9 @@ $( document ).ready(function() {
         var toString = getPrice["0"].innerHTML;
         var toNumber = toString.replace(/[^0-9.]/g, "");
         var pricecal = ( toNumber * getValue["0"].value );
+        var subtotal;
         priceArray.push(pricecal);
-        console.log(priceArray.reduce(getSum));
+        $('.totalPrice').html("$ " + priceArray.reduce(getSum) + " NZD");
     }
 
     function getSum(total, num) {

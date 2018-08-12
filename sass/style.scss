@@ -333,12 +333,20 @@ main{
 						    background: transparent;  /* optional: just make scrollbar invisible */
 						}
 					.total{
-						bottom: 10%;
 						position: absolute;
 						left: 0;
 						right: 0;
 						hr{
 							border: 0.5px solid black;
+						}
+						.priceDiv {
+							height: 100%;
+							.totalPrice {
+									text-align: center;
+									font-family:$primary-font;
+									font-size: 22px;
+									color: black;
+							}
 						}
 
 					}

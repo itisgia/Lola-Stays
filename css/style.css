@@ -306,12 +306,18 @@ main {
           background: transparent;
           /* optional: just make scrollbar invisible */ }
         .big-box .right-wrap .border-box .price-wrap .total {
-          bottom: 10%;
           position: absolute;
           left: 0;
           right: 0; }
           .big-box .right-wrap .border-box .price-wrap .total hr {
             border: 0.5px solid black; }
+          .big-box .right-wrap .border-box .price-wrap .total .priceDiv {
+            height: 100%; }
+            .big-box .right-wrap .border-box .price-wrap .total .priceDiv .totalPrice {
+              text-align: center;
+              font-family: "Hind Guntur", sans-serif;
+              font-size: 22px;
+              color: black; }
       .big-box .right-wrap .border-box a {
         text-decoration: none; }
       .big-box .right-wrap .border-box button {
