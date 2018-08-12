@@ -526,6 +526,8 @@ footer {
     footer .cart .footer-pop {
       display: none;
       height: 205px; }
+      footer .cart .footer-pop .orderWrapper {
+        display: flex; }
 
   .flexwrap {
     display: flex;
@@ -554,6 +556,11 @@ footer {
 
   .sides {
     width: 90% !important; }
+
+  .right-wrap {
+    margin-top: 1% !important; }
+    .right-wrap .foodList {
+      height: 25vh !important; }
 
   .price-wrap hr {
     width: 28% !important; } }
