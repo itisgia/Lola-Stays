@@ -292,19 +292,35 @@ main {
           border: 0.5px solid black; }
         .big-box .right-wrap .border-box .price-wrap .order-list .foodList, .big-box .right-wrap .border-box .price-wrap .total .foodList {
           height: 30vh;
-          overflow-y: scroll; }
+          overflow-y: scroll;
+          overflow-x: hidden;
+          margin-top: 2%; }
           .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox {
-            margin-top: 1%; }
+            margin-top: 1%;
+            display: flex; }
             .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox p, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox p {
               text-align: center;
               font-family: "Hind Guntur", sans-serif;
               font-size: 15px;
-              color: black; }
+              color: black;
+              margin-right: 0;
+              display: block;
+              margin-top: 4%; }
+            .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox button, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox button {
+              width: 15px;
+              height: 15px;
+              background-color: transparent;
+              margin-top: 0; }
+              .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox button .fa, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox button .fa {
+                font-size: 13px;
+                color: black;
+                margin-left: 6%; }
         .big-box .right-wrap .border-box .price-wrap ::-webkit-scrollbar {
-          width: 0px;
-          /* remove scrollbar space */
-          background: transparent;
-          /* optional: just make scrollbar invisible */ }
+          width: 2px;
+          /* remove scrollbar space */ }
+        .big-box .right-wrap .border-box .price-wrap ::-webkit-scrollbar-thumb {
+          background: red;
+          border-radius: 10px; }
         .big-box .right-wrap .border-box .price-wrap .total {
           position: absolute;
           left: 0;

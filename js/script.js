@@ -3,10 +3,9 @@ $( document ).ready(function() {
     var getValue;
     var getPrice;
     var priceArray =[];
-    var check =[];
-    var sum= 0;
     var Plus  = $(".plus");
     var Minus = $(".minus");
+    var close = document.getElementsByClassName('fa-times');
 
     var incrementPlus = Plus.click(function() {
         event.preventDefault();
@@ -34,7 +33,7 @@ $( document ).ready(function() {
 
 
     // when the button is clicked, name and price are addded in the box
-     $('.add-btn').click(function(getVal){
+     $('.add-btn').click(function(){
          look = $(this)
             .parent(".qty")
             .parent(".product")
@@ -54,28 +53,45 @@ $( document ).ready(function() {
   // adding food list to the right div box
     function addFoodList(){
         var newLine = '<div class="orderBox">';
-            newLine += '	<p class="nameOfFood">';
-            newLine +=  look["0"].outerText +' x '+ getValue["0"].value  ;
-            newLine += '</p>'
-            newLine += '	<p class="orderNumber">';
-            newLine +-' </p>  '
+            newLine += '	 <p class="nameOfFood">';
+            newLine +=          look["0"].outerText +' x '+ getValue["0"].value  ;
+            newLine += '    </p>';
+            newLine += '<button class= "closeBtn">';
+            newLine += '    <i class="fa fa-times closing"></i>'
+            newLine += '</button>'
             newLine += '</div>';
         $('.foodList').append(newLine);
-        // calculatePrice();
+        console.log(close);
+        deleteItem ();
     } // fires in line 44
+
+
+    function deleteItem () {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", closingDiv, false);
+        }
+    }
+
+    function closingDiv(el) {
+        var findBox = el.target.parentNode.parentNode;
+        findBox.remove();
+    }
 
     function calculatePrice() {
         var toString = getPrice["0"].innerHTML;
         var toNumber = toString.replace(/[^0-9.]/g, "");
         var pricecal = ( toNumber * getValue["0"].value );
-        var subtotal;
         priceArray.push(pricecal);
         $('.totalPrice').html("$ " + priceArray.reduce(getSum) + " NZD");
     }
 
     function getSum(total, num) {
-        return total + num
+        return total + num;
     }
+      // close function
+
+
+
 
     //call staff
     $(".right").click(function(){

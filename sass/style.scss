@@ -70,9 +70,6 @@
 		font-family: $primary-font;
 	}
 }
-.index-btn1{
-
-}
 
 .message{
 		display: block;
@@ -317,20 +314,43 @@ main{
 						.foodList {
 							height: 30vh;
 							overflow-y: scroll;
+							overflow-x: hidden;
+							margin-top: 2%;
 							.orderBox{
 								margin-top: 1%;
+								display: flex;
 								p{
 									text-align: center;
 									font-family:$primary-font;
 									font-size: 15px;
 									color: black;
+									margin-right: 0;
+									display: block;
+									margin-top: 4%;
+								}
+								button{
+									width: 15px;
+									height: 15px;
+									background-color: transparent;
+									margin-top: 0;
+
+									.fa {
+										font-size: 13px;
+										color: black;
+										margin-left: 6%;
+
+									}
 								}
 							}
 						}
 					}
 					::-webkit-scrollbar {
-						    width: 0px;  /* remove scrollbar space */
-						    background: transparent;  /* optional: just make scrollbar invisible */
+						    width: 2px;  /* remove scrollbar space */
+						    // background: transparent;  /* optional: just make scrollbar invisible */
+						}
+						::-webkit-scrollbar-thumb {
+						    background: red;
+						    border-radius: 10px;
 						}
 					.total{
 						position: absolute;
