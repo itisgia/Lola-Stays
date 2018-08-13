@@ -327,12 +327,16 @@ main{
 									margin-right: 0;
 									display: block;
 									margin-top: 4%;
+									flex:9;
 								}
 								button{
 									width: 15px;
 									height: 15px;
 									background-color: transparent;
 									margin-top: 0;
+									flex:1;
+								  outline: none;
+
 
 									.fa {
 										font-size: 13px;
@@ -349,7 +353,7 @@ main{
 						    // background: transparent;  /* optional: just make scrollbar invisible */
 						}
 						::-webkit-scrollbar-thumb {
-						    background: red;
+						    background: #D18D88;
 						    border-radius: 10px;
 						}
 					.total{
