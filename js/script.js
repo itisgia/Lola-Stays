@@ -46,8 +46,6 @@ $( document ).ready(function() {
               .parent(".qty")
               .parent(".product")
               .find(".price");
-              console.log(getPrice);
-
         addFoodList(); // function happens in line 48
         calculatePrice();
          //line 54
@@ -74,28 +72,25 @@ $( document ).ready(function() {
     }
 
     //remove food
-    function closingDiv() {
+    function closingDiv(el) {
         var findBox = el.target.parentNode.parentNode;
-        findBox.remove();
-
-    }
-
-    function calculatePrice(check) {
         var toString = getPrice["0"].innerHTML;
         var toNumber = toString.replace(/[^0-9.]/g, "");
-        var pricecal = Math.round( toNumber * getValue["0"].value );
-            price = parseInt(pricecal);
-            checkout += price
-            $('.totalPrice').html("$ " + checkout + " NZD");
+        var pricecal = ( toNumber * getValue["0"].value );
+            findBox.remove();
+            price -= pricecal;
+            $('.totalPrice').html("$ " + price + " NZD");
+            console.log($('.totalPrice').html());
     }
 
-    // function getSum(total, num) {
-    //     return total + num;
-    // }
-      // close function
+    function calculatePrice() {
+        var toString = getPrice["0"].innerHTML;
+        var toNumber = toString.replace(/[^0-9.]/g, "");
+        var pricecal = ( toNumber * getValue["0"].value );
+            price += pricecal;
+            $('.totalPrice').html("$ " + price + " NZD");
 
-
-
+    }
 
     //call staff
     $(".right").click(function(){
