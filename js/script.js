@@ -2,7 +2,8 @@ $( document ).ready(function() {
     var look;
     var getValue;
     var getPrice;
-    var priceArray =[];
+    var price = 0;
+    var checkout = 0;
     var Plus  = $(".plus");
     var Minus = $(".minus");
     var close = document.getElementsByClassName('fa-times');
@@ -31,7 +32,6 @@ $( document ).ready(function() {
       }
     });
 
-
     // when the button is clicked, name and price are addded in the box
      $('.add-btn').click(function(){
          look = $(this)
@@ -46,6 +46,8 @@ $( document ).ready(function() {
               .parent(".qty")
               .parent(".product")
               .find(".price");
+              console.log(getPrice);
+
         addFoodList(); // function happens in line 48
         calculatePrice();
          //line 54
@@ -61,7 +63,6 @@ $( document ).ready(function() {
             newLine += '</button>'
             newLine += '</div>';
         $('.foodList').append(newLine);
-        console.log(close);
         deleteItem ();
     } // fires in line 44
 
@@ -72,22 +73,25 @@ $( document ).ready(function() {
         }
     }
 
-    function closingDiv(el) {
+    //remove food
+    function closingDiv() {
         var findBox = el.target.parentNode.parentNode;
         findBox.remove();
+
     }
 
-    function calculatePrice() {
+    function calculatePrice(check) {
         var toString = getPrice["0"].innerHTML;
         var toNumber = toString.replace(/[^0-9.]/g, "");
-        var pricecal = ( toNumber * getValue["0"].value );
-        priceArray.push(pricecal);
-        $('.totalPrice').html("$ " + priceArray.reduce(getSum) + " NZD");
+        var pricecal = Math.round( toNumber * getValue["0"].value );
+            price = parseInt(pricecal);
+            checkout += price
+            $('.totalPrice').html("$ " + checkout + " NZD");
     }
 
-    function getSum(total, num) {
-        return total + num;
-    }
+    // function getSum(total, num) {
+    //     return total + num;
+    // }
       // close function
 
 
