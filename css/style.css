@@ -398,6 +398,12 @@ main {
       font-size: 50px;
       display: block;
       text-align: center; }
+#pricee {
+    color: black;
+}
+.pricee{
+    color: black;
+}
 
 footer {
   display: none; }
@@ -562,8 +568,7 @@ footer {
     height: auto; }
 
   body {
-    transform: scale(0.9);
-    transform-origin: 0 0;
+
     margin: 0 auto; }
 
   main {

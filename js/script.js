@@ -2,14 +2,11 @@ $( document ).ready(function() {
     var look;
     var getValue;
     var getPrice;
-    var price = 0;
-    var checkout = 0;
     var Plus  = $(".plus");
     var Minus = $(".minus");
     var close = document.getElementsByClassName('fa-times');
 
     var incrementPlus = Plus.click(function() {
-        event.preventDefault();
         var $n = $(this)
             .parent(".controls-wrapper")
             .parent(".qty")
@@ -21,7 +18,6 @@ $( document ).ready(function() {
     });
 
     var incrementMinus = Minus.click(function() {
-        event.preventDefault();
         var $n = $(this)
             .parent(".controls-wrapper")
             .parent(".qty")
@@ -41,7 +37,7 @@ $( document ).ready(function() {
          getValue = $(this)
              .parent(".qty")
              .parent(".product")
-             .find(".quantity"); // targeting the value of its food
+             .find(".quantity").val(); // targeting the value of its food
           getPrice = $(this)
               .parent(".qty")
               .parent(".product")
@@ -50,17 +46,27 @@ $( document ).ready(function() {
         calculatePrice();
          //line 54
      });
-  // adding food list to the right div box
+
+  // adding food list into the right div box
     function addFoodList(){
+        var pricing = getPrice[0].innerHTML;
+        var priceVal = pricing.replace(/[^0-9.]/g, "");
+        var getting = priceVal * getValue;
         var newLine = '<div class="orderBox">';
             newLine += '	 <p class="nameOfFood">';
-            newLine +=          look["0"].outerText +' x '+ getValue["0"].value  ;
+            newLine +=          look["0"].outerText +' x '+ getValue  ;
+            newLine +='              $ '
+            newLine += '            <span class = pricee>'
+            newLine +=                  parseFloat(getting);
+            newLine += '            </span>'
             newLine += '    </p>';
             newLine += '<button class= "closeBtn">';
             newLine += '    <i class="fa fa-times closing"></i>'
             newLine += '</button>'
             newLine += '</div>';
+        console.log(getting + '  line68'); // price counting just once.
         $('.foodList').append(newLine);
+        console.log($('.pricee'));
         deleteItem ();
     } // fires in line 44
 
@@ -74,21 +80,20 @@ $( document ).ready(function() {
     //remove food
     function closingDiv(el) {
         var findBox = el.target.parentNode.parentNode;
-        var toString = getPrice["0"].innerHTML;
-        var toNumber = toString.replace(/[^0-9.]/g, "");
-        var pricecal = ( toNumber * getValue["0"].value );
             findBox.remove();
-            price -= pricecal;
-            $('.totalPrice').html("$ " + price + " NZD");
-            console.log($('.totalPrice').html());
-    }
+            console.log($('.pricee'));
+            // calculatePrice();
 
+    }
+// calculating price
     function calculatePrice() {
-        var toString = getPrice["0"].innerHTML;
-        var toNumber = toString.replace(/[^0-9.]/g, "");
-        var pricecal = ( toNumber * getValue["0"].value );
-            price += pricecal;
-            $('.totalPrice').html("$ " + price + " NZD");
+        var price = 0;
+        $(".pricee").each(function (){
+            var calEach = parseFloat($(this).text());
+            price += calEach;
+        });
+        console.log(price);
+        $('.totalPrice').html("$ " + price + " NZD");
 
     }
 
