@@ -33,22 +33,23 @@ $( document ).ready(function() {
          look = $(this)
             .parent(".qty")
             .parent(".product")
-            .find(".name"); // targeting the name of its food name
+            .find(".name"); // targeting food names
          getValue = $(this)
              .parent(".qty")
              .parent(".product")
-             .find(".quantity").val(); // targeting the value of its food
+             .find(".quantity").val(); // targeting each values
           getPrice = $(this)
               .parent(".qty")
               .parent(".product")
               .find(".price");
-        addFoodList(); // function happens in line 48
+        addFoodList(); //
         calculatePrice();
          //line 54
      });
 
-  // adding food list into the right div box
+  // adding food lists into the right div box
     function addFoodList(){
+        console.log('click 1 line 52');
         var pricing = getPrice[0].innerHTML;
         var priceVal = pricing.replace(/[^0-9.]/g, "");
         var getting = priceVal * getValue;
@@ -56,7 +57,7 @@ $( document ).ready(function() {
             newLine += '	 <p class="nameOfFood">';
             newLine +=          look["0"].outerText +' x '+ getValue  ;
             newLine +='              $ '
-            newLine += '            <span class = pricee>'
+            newLine += '            <span class = subtotal>'
             newLine +=                  parseFloat(getting);
             newLine += '            </span>'
             newLine += '    </p>';
@@ -64,9 +65,9 @@ $( document ).ready(function() {
             newLine += '    <i class="fa fa-times closing"></i>'
             newLine += '</button>'
             newLine += '</div>';
-        console.log(getting + '  line68'); // price counting just once.
         $('.foodList').append(newLine);
-        console.log($('.pricee'));
+        // console.log($('.subtotal'));
+        // console.log($('.nameOfFood'));   // both counting twice in the function
         deleteItem ();
     } // fires in line 44
 
@@ -81,14 +82,15 @@ $( document ).ready(function() {
     function closingDiv(el) {
         var findBox = el.target.parentNode.parentNode;
             findBox.remove();
-            console.log($('.pricee'));
-            // calculatePrice();
+            console.log($('.pricee' + 'rm btn cliced'));
+            calculatePrice();
 
     }
 // calculating price
     function calculatePrice() {
         var price = 0;
-        $(".pricee").each(function (){
+        $(".subtotal").each(function (){
+            console.log($('.subtotal'));
             var calEach = parseFloat($(this).text());
             price += calEach;
         });
