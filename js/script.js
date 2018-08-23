@@ -56,17 +56,17 @@ $( document ).ready(function() {
         var newLine = '<div class="orderBox">';
             newLine += '	 <p class="nameOfFood">';
             newLine +=          look["0"].outerText +' x '+ getValue  ;
-            newLine +='              $ '
+            newLine +='             $ '
             newLine += '            <span class = subtotal>'
             newLine +=                  parseFloat(getting);
             newLine += '            </span>'
             newLine += '    </p>';
-            newLine += '<button class= "closeBtn">';
-            newLine += '    <i class="fa fa-times closing"></i>'
-            newLine += '</button>'
+            newLine += '    <button class= "closeBtn">';
+            newLine += '        <i class="fa fa-times closing"></i>'
+            newLine += '    </button>'
             newLine += '</div>';
         $('.foodList').append(newLine);
-        // console.log($('.subtotal'));
+        console.log($('.subtotal'));
         // console.log($('.nameOfFood'));   // both counting twice in the function
         deleteItem ();
     } // fires in line 44
@@ -82,19 +82,17 @@ $( document ).ready(function() {
     function closingDiv(el) {
         var findBox = el.target.parentNode.parentNode;
             findBox.remove();
-            console.log($('.pricee' + 'rm btn cliced'));
             calculatePrice();
 
     }
 // calculating price
     function calculatePrice() {
         var price = 0;
-        $(".subtotal").each(function (){
-            console.log($('.subtotal'));
+        $('.subtotal').each(function (){
+            console.log($('.subtotal' + 'each function'));
             var calEach = parseFloat($(this).text());
             price += calEach;
         });
-        console.log(price);
         $('.totalPrice').html("$ " + price + " NZD");
 
     }
