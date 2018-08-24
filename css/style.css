@@ -247,6 +247,8 @@ main {
     width: 35%;
     margin-top: 88px;
     right: 0; }
+    .big-box .right-wrap i {
+      display: none; }
     .big-box .right-wrap .border-box {
       margin-right: 23px;
       width: 89%; }
