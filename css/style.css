@@ -460,7 +460,8 @@ main {
       color: white;
       margin-left: 12px;
       margin-top: 10px;
-      font-size: 2em; }
+      font-size: 2em;
+      display: block; }
     .big-box .right-wrap span {
       margin-right: 10px;
       letter-spacing: 3px;
