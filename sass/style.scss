@@ -211,7 +211,7 @@ main{
 
 
 .big-box{
-	background-color:white;;
+	background-color:white;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-between;
@@ -250,39 +250,6 @@ main{
 			}
 
 		}
-	.sides{
-		font-family: $primary-font;
-		width: 92%;
-		h3{
-			font-size: 28px;
-    		color: #D18D88;
-    		text-decoration:underline;
-		}
-
-		.sides-wrap{
-			display: flex;
-			flex-wrap:wrap;
-			justify-content: space-between;
-			width: 93%;
-
-			span{
-				font-size: 23px;
-				color: black;
-				margin: 0;
-			}
-			button{
-				// background-color: #636363;
-				font-size: 23px;
-				padding: 3px;
-				color: #636363;
-				border: 3px solid;
-				background-color: white;
-			}
-		}
-	}
-	.aday{
-		width: 95%;
-	}
 	}
 	.right-wrap{
 		width:35%;
@@ -329,13 +296,18 @@ main{
 									margin-top: 4%;
 									flex:9;
 								}
+								span {
+									font-family:$primary-font;
+									font-size: 15px;
+									color: black;
+								}
 								button{
 									width: 15px;
 									height: 15px;
 									background-color: transparent;
 									margin-top: 0;
 									flex:1;
-								  outline: none;
+								  	outline: none;
 									.fa {
 										font-size: 13px;
 										color: black;
@@ -454,17 +426,11 @@ main{
 	}
 
 }
-footer{
-	display: none;
-}
-@media only screen and (max-width: 767px){
-	// .header-box {
-	// 	width: 300px;
 
-	// }
+@media only screen and (max-width: 767px){
+
 	header{
 		height: auto;
-
 	}
 	.option{
 		.lang{
@@ -479,7 +445,6 @@ footer{
 		h1{
 			letter-spacing: 2px;
 			font-size: 34px;
-
 			}
 		}
 	.index-btn{
@@ -504,15 +469,12 @@ footer{
 		h1{
 			letter-spacing: 2px;
 			font-size: 34px;
-
 			}
 		}
 
 		.topnav{
-
 			i{
 	    	font-size: 2em;
-
 			}
 			span{
 				font-size: 21px;
@@ -565,27 +527,59 @@ footer{
 				width: 75px;
 
 			}
-			.sides{
-				.sides-wrap{
-					span{
-						font-size: 14px;
-					}
-					button{
-						font-size: 13px;
-					}
+		}
+		.right-wrap{
+			h3 {
+				font-size: 14px !important;
+			}
+			background-color:#bcc9d8;
+			position: absolute;
+			width: 100vw;
+			bottom: 0;
+			height: 8vh;
+			.border-box{
+				// margin:0;
+				margin-top: 5%;
+			}
+			i{
+				color: white;
+				margin-left: 12px;
+				margin-top: 10px;
+				font-size: 2em;
+			}
+			span{
+				margin-right: 10px;
+				letter-spacing: 3px;
+				display: inline-block;
+				margin-left: 12px;
+				font-family: $primary-font;
+
+			}
+			button{
+				position: absolute;
+				right: 0;
+				top: 0 !important;
+				margin: 0 !important;
+				width: 36% !important;
+				height: 8vh;
+				height: 8vh;
+				font-size: 16px !important;
+			}
+			.price-wrap {
+				border: none !important;
+				.order-list {
+					width: 50%;
+					float: left;
+				}
+				.total {
+					width: 50%;
+					float: right !important;
+					position: relative!important;
 				}
 			}
 		}
-
-		.right-wrap{
-			margin-top: 70px;
-			width: 50%;
-			display: none;
-			.border-box{
-				margin-right: 0;
-			}
-		}
 		.product-wrap{
+			border: none;
 			img{
 				width: 130px;
 				height: 130px;
@@ -653,45 +647,6 @@ footer{
 	}
 
 	}
-	footer{
-		display: block;
-		background-color:#bcc9d8;
-		position: fixed;
-		left: 0;
-    	bottom: 0;
-    	width: 100%;
-		.cart{
-			i{
-				color: white;
-				margin-left: 12px;
-			}
-			span{
-				margin-right: 10px;
-				letter-spacing: 3px;
-				display: inline-block;
-    			margin-left: 12px;
-    			font-family: $primary-font;
-
-			}
-			.footer-btn{
-				float: right;
-				background-color:#636363;
-				border:none;
-				font-family:$primary-font;
-				font-size: 20px;
-				padding: 0px 12px;
-				border-radius: 0px;
-
-			}
-			.footer-pop{
-				display: none;
-				height: 205px;
-				.orderWrapper {
-					display: flex;
-				}
-			}
-		}
-	}
 	.flexwrap {
 		display: flex;
 		width: 39%;
@@ -707,26 +662,24 @@ footer{
 }
 
 @media only screen and (min-width: 1024px){
+
 	header{
 		height: auto;
 	}
+
 	body {
-    margin: 0 auto;
+		zoom: 0.9 !important;
 	}
 	main{
 		height: 64vh;
+
 	}
 
 	.indication{
 		padding-top: 18px;
 	    padding-bottom: 23px;
 	}
-	.sides{
-		width: 90%!important;
-		.sides-wrap{
 
-		}
-	}
 	.right-wrap {
 		margin-top: 1% !important;
 		.foodList{
@@ -737,6 +690,9 @@ footer{
 		hr{
 			width: 28% !important;
 		}
+	}
+	.product-wrap {
+		width: 90%;
 	}
 
 }

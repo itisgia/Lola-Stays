@@ -66,8 +66,6 @@ $( document ).ready(function() {
             newLine += '    </button>'
             newLine += '</div>';
         $('.foodList').append(newLine);
-        console.log($('.subtotal'));
-        // console.log($('.nameOfFood'));   // both counting twice in the function
         deleteItem ();
     } // fires in line 44
 
@@ -83,7 +81,6 @@ $( document ).ready(function() {
         var findBox = el.target.parentNode.parentNode;
             findBox.remove();
             calculatePrice();
-
     }
 // calculating price
     function calculatePrice() {
@@ -104,9 +101,9 @@ $( document ).ready(function() {
 
 
     //mobile version footer(cart)
-    $(document).ready(function(){
-        $(".cart").click(function(){
-            $(".footer-pop").toggle();
-        });
-    });
+
+    $(".right-wrap").one('click', function () {
+        $(this).height( 370 );
+    })
+
 });//////// ENDS

@@ -243,30 +243,6 @@ main {
         color: black;
         font-family: "Hind Guntur", sans-serif;
         font-size: 19px; }
-    .big-box .left-wrap .sides {
-      font-family: "Hind Guntur", sans-serif;
-      width: 92%; }
-      .big-box .left-wrap .sides h3 {
-        font-size: 28px;
-        color: #D18D88;
-        text-decoration: underline; }
-      .big-box .left-wrap .sides .sides-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 93%; }
-        .big-box .left-wrap .sides .sides-wrap span {
-          font-size: 23px;
-          color: black;
-          margin: 0; }
-        .big-box .left-wrap .sides .sides-wrap button {
-          font-size: 23px;
-          padding: 3px;
-          color: #636363;
-          border: 3px solid;
-          background-color: white; }
-    .big-box .left-wrap .aday {
-      width: 95%; }
   .big-box .right-wrap {
     width: 35%;
     margin-top: 88px;
@@ -307,6 +283,10 @@ main {
               display: block;
               margin-top: 4%;
               flex: 9; }
+            .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox span, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox span {
+              font-family: "Hind Guntur", sans-serif;
+              font-size: 15px;
+              color: black; }
             .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox button, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox button {
               width: 15px;
               height: 15px;
@@ -399,13 +379,6 @@ main {
       display: block;
       text-align: center; }
 
-.subtotal{
-    color: black;
-}
-
-footer {
-  display: none; }
-
 @media only screen and (max-width: 767px) {
   header {
     height: auto; }
@@ -471,38 +444,69 @@ footer {
       max-width: 100%; }
     .big-box .left-wrap .add-btn {
       width: 75px; }
-    .big-box .left-wrap .sides .sides-wrap span {
-      font-size: 14px; }
-    .big-box .left-wrap .sides .sides-wrap button {
-      font-size: 13px; }
   .big-box .right-wrap {
-    margin-top: 70px;
-    width: 50%;
-    display: none; }
+    background-color: #bcc9d8;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    height: 8vh; }
+    .big-box .right-wrap h3 {
+      font-size: 14px !important; }
     .big-box .right-wrap .border-box {
-      margin-right: 0; }
-  .big-box .product-wrap img {
-    width: 130px;
-    height: 130px;
-    display: block; }
-  .big-box .product-wrap .product {
-    width: 50%; }
-    .big-box .product-wrap .product p {
-      font-size: 14px;
-      text-align: center; }
-    .big-box .product-wrap .product .qty {
-      width: 132px; }
-      .big-box .product-wrap .product .qty [name=quantity] {
-        width: 17px;
-        font-size: 1.2em; }
-      .big-box .product-wrap .product .qty .minus, .big-box .product-wrap .product .qty .plus {
-        font-size: 1.9em;
-        width: 16px; }
-      .big-box .product-wrap .product .qty .plus {
-        margin-right: 9px; }
-      .big-box .product-wrap .product .qty .add-btn {
-        font-size: 17px;
-        width: 45px; }
+      margin-top: 5%; }
+    .big-box .right-wrap i {
+      color: white;
+      margin-left: 12px;
+      margin-top: 10px;
+      font-size: 2em; }
+    .big-box .right-wrap span {
+      margin-right: 10px;
+      letter-spacing: 3px;
+      display: inline-block;
+      margin-left: 12px;
+      font-family: "Hind Guntur", sans-serif; }
+    .big-box .right-wrap button {
+      position: absolute;
+      right: 0;
+      top: 0 !important;
+      margin: 0 !important;
+      width: 36% !important;
+      height: 8vh;
+      height: 8vh;
+      font-size: 16px !important; }
+    .big-box .right-wrap .price-wrap {
+      border: none !important; }
+      .big-box .right-wrap .price-wrap .order-list {
+        width: 50%;
+        float: left; }
+      .big-box .right-wrap .price-wrap .total {
+        width: 50%;
+        float: right !important;
+        position: relative !important; }
+  .big-box .product-wrap {
+    border: none; }
+    .big-box .product-wrap img {
+      width: 130px;
+      height: 130px;
+      display: block; }
+    .big-box .product-wrap .product {
+      width: 50%; }
+      .big-box .product-wrap .product p {
+        font-size: 14px;
+        text-align: center; }
+      .big-box .product-wrap .product .qty {
+        width: 132px; }
+        .big-box .product-wrap .product .qty [name=quantity] {
+          width: 17px;
+          font-size: 1.2em; }
+        .big-box .product-wrap .product .qty .minus, .big-box .product-wrap .product .qty .plus {
+          font-size: 1.9em;
+          width: 16px; }
+        .big-box .product-wrap .product .qty .plus {
+          margin-right: 9px; }
+        .big-box .product-wrap .product .qty .add-btn {
+          font-size: 17px;
+          width: 45px; }
 
   .message {
     font-size: 30px;
@@ -522,36 +526,6 @@ footer {
     .main-scroll .help p {
       font-size: 30px; }
 
-  footer {
-    display: block;
-    background-color: #bcc9d8;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%; }
-    footer .cart i {
-      color: white;
-      margin-left: 12px; }
-    footer .cart span {
-      margin-right: 10px;
-      letter-spacing: 3px;
-      display: inline-block;
-      margin-left: 12px;
-      font-family: "Hind Guntur", sans-serif; }
-    footer .cart .footer-btn {
-      float: right;
-      background-color: #636363;
-      border: none;
-      font-family: "Hind Guntur", sans-serif;
-      font-size: 20px;
-      padding: 0px 12px;
-      border-radius: 0px; }
-    footer .cart .footer-pop {
-      display: none;
-      height: 205px; }
-      footer .cart .footer-pop .orderWrapper {
-        display: flex; }
-
   .flexwrap {
     display: flex;
     width: 39%; }
@@ -566,8 +540,7 @@ footer {
     height: auto; }
 
   body {
-
-    margin: 0 auto; }
+    zoom: 0.9 !important; }
 
   main {
     height: 64vh; }
@@ -576,15 +549,15 @@ footer {
     padding-top: 18px;
     padding-bottom: 23px; }
 
-  .sides {
-    width: 90% !important; }
-
   .right-wrap {
     margin-top: 1% !important; }
     .right-wrap .foodList {
       height: 25vh !important; }
 
   .price-wrap hr {
-    width: 28% !important; } }
+    width: 28% !important; }
+
+  .product-wrap {
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
