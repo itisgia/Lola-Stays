@@ -5,6 +5,7 @@ $( document ).ready(function() {
     var Plus  = $(".plus");
     var Minus = $(".minus");
     var close = document.getElementsByClassName('fa-times');
+    var rightWrap = document.querySelector('.right-wrap');
 
     var incrementPlus = Plus.click(function() {
         var $n = $(this)
@@ -67,6 +68,7 @@ $( document ).ready(function() {
             newLine += '</div>';
         $('.foodList').append(newLine);
         deleteItem ();
+        lengthCheck();
     } // fires in line 44
 
 
@@ -94,7 +96,11 @@ $( document ).ready(function() {
 
     }
 
-    //call staff
+    function  lengthCheck() {
+        console.log($('.nameOfFood').length);
+        $('.amount').html('(' + $('.nameOfFood').length + ')')
+    }
+    //call a staff
     $(".right").click(function(){
         alert("One of our staff will be there soon!");
     });
@@ -102,12 +108,23 @@ $( document ).ready(function() {
 
     //mobile version footer(cart)
 
-    $(".right-wrap").one('click', function () {
-        $(this).height( 370 );
-        $('.closing')[0].style.display = 'block';
-    })
-    $('.closing').click(function () {
-        console.log('clicked');
-    })
+
+    rightWrap.addEventListener("click", changec, false);
+    function changec() {
+    if (this.style.height == '' )
+        this.style.height = '60vh';
+        else {
+        this.style.height = ''
+        }
+    }
+
+// function shrinkDiv() {
+//
+//     // $('.closing')[0].style.display = 'none';
+//     if (rightWrap.style.height == '60vh'){
+//         rightWrap.style.height = ''
+//     }
+//
+// }
 
 });//////// ENDS

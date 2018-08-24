@@ -454,11 +454,6 @@ main {
       font-size: 14px !important; }
     .big-box .right-wrap .border-box {
       margin-top: 5%; }
-      .big-box .right-wrap .border-box i {
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        display: none; }
     .big-box .right-wrap i {
       color: white;
       margin-left: 12px;
