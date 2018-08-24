@@ -108,9 +108,9 @@ main{
 			display:block;
 
 		}
-	a{
-		text-decoration:none;
-	}
+		a{
+			text-decoration:none;
+		}
 	}
 	.drink {
 		display:block;
@@ -241,7 +241,6 @@ main{
 		    .product{
 		    	padding-bottom:10px;
 		    	}
-
 			}
 			p{
 				color:black;
@@ -322,10 +321,10 @@ main{
 						    width: 2px;  /* remove scrollbar space */
 						    // background: transparent;  /* optional: just make scrollbar invisible */
 						}
-						::-webkit-scrollbar-thumb {
+					::-webkit-scrollbar-thumb {
 						    background: #D18D88;
 						    border-radius: 10px;
-						}
+					}
 					.total{
 						position: absolute;
 						left: 0;
@@ -421,7 +420,6 @@ main{
 			font-size:50px;
 			display:block;
 			text-align:center;
-
 		}
 	}
 
@@ -540,6 +538,12 @@ main{
 			.border-box{
 				// margin:0;
 				margin-top: 5%;
+				i {
+					position: absolute;
+					bottom: 0;
+					right: 50%;
+					display: none;
+				}
 			}
 			i{
 				color: white;

@@ -104,6 +104,10 @@ $( document ).ready(function() {
 
     $(".right-wrap").one('click', function () {
         $(this).height( 370 );
+        $('.closing')[0].style.display = 'block';
+    })
+    $('.closing').click(function () {
+        console.log('clicked');
     })
 
 });//////// ENDS
