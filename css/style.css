@@ -247,7 +247,7 @@ main {
     width: 35%;
     margin-top: 88px;
     right: 0; }
-    .big-box .right-wrap i {
+    .big-box .right-wrap .fa-shopping-car {
       display: none; }
     .big-box .right-wrap .border-box {
       margin-right: 23px;
