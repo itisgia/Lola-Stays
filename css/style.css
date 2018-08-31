@@ -89,18 +89,14 @@ header {
     font-family: "Hind Guntur", sans-serif;
     color: white; }
 
-.index-btn, .index-btn1 {
+.index-btn {
   background-color: #759e7C;
   border: none;
   display: block;
   font-size: 69px;
-  padding: 0px 60px;
+  padding: 12px 60px;
   margin-top: 15%;
   letter-spacing: 8px; }
-  .index-btn a, .index-btn1 a {
-    color: white;
-    text-decoration: none;
-    font-family: "Hind Guntur", sans-serif; }
 
 .message {
   display: block;
@@ -223,6 +219,7 @@ main {
     width: 65%;
     margin: 0;
     overflow-y: scroll;
+    height: 94%;
     margin-top: 20px; }
     .big-box .left-wrap .morning, .big-box .left-wrap .allday, .big-box .left-wrap .drink {
       padding-bottom: 12px; }
@@ -247,7 +244,7 @@ main {
     width: 35%;
     margin-top: 88px;
     right: 0; }
-    .big-box .right-wrap .fa-shopping-car {
+    .big-box .right-wrap .fa-shopping-cart {
       display: none; }
     .big-box .right-wrap .border-box {
       margin-right: 23px;
@@ -395,10 +392,6 @@ main {
       letter-spacing: 2px;
       font-size: 34px; }
 
-  .index-btn {
-    font-size: 34px;
-    padding: 0px 23px; }
-
   .index-btn1 {
     font-size: 22px;
     padding: 0px 23px; }
@@ -461,7 +454,7 @@ main {
       margin-left: 12px;
       margin-top: 10px;
       font-size: 2em;
-      display: block; }
+      display: block !important; }
     .big-box .right-wrap span {
       margin-right: 10px;
       letter-spacing: 3px;
@@ -543,7 +536,15 @@ main {
     height: auto; }
 
   body {
-    zoom: 0.9 !important; }
+    zoom: 0.9 !important;
+    -moz-transform: scale(0.9) !important;
+    -moz-transform-origin: 0 0 !important;
+    -o-transform: scale(0.9) !important;
+    -o-transform-origin: 0 0 !important;
+    -webkit-transform: scale(0.9) !important;
+    -webkit-transform-origin: 0 0 !important;
+    transform: scale(0.9) !important;
+    transform-origin: 0 0 !important; }
 
   main {
     height: 64vh; }

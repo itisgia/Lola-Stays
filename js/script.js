@@ -67,6 +67,7 @@ $( document ).ready(function() {
             newLine += '    </button>'
             newLine += '</div>';
         $('.foodList').append(newLine);
+        console.log( look["0"].outerText);
         deleteItem ();
         lengthCheck();
     } // fires in line 44
@@ -88,7 +89,6 @@ $( document ).ready(function() {
     function calculatePrice() {
         var price = 0;
         $('.subtotal').each(function (){
-            console.log($('.subtotal' + 'each function'));
             var calEach = parseFloat($(this).text());
             price += calEach;
         });
@@ -109,22 +109,14 @@ $( document ).ready(function() {
     //mobile version footer(cart)
 
 
-    rightWrap.addEventListener("click", changec, false);
-    function changec() {
-    if (this.style.height == '' )
-        this.style.height = '60vh';
-        else {
-        this.style.height = ''
-        }
-    }
-
-// function shrinkDiv() {
-//
-//     // $('.closing')[0].style.display = 'none';
-//     if (rightWrap.style.height == '60vh'){
-//         rightWrap.style.height = ''
-//     }
-//
-// }
+    // rightWrap.addEventListener("click", changec, false);
+    //
+    // function changec() {
+    // if (this.style.height == '' )
+    //     this.style.height = '60vh';
+    //     else {
+    //     this.style.height = ''
+    //     }
+    // }
 
 });//////// ENDS
