@@ -75,6 +75,7 @@ $( document ).ready(function() {
         for (var i = 0; i < close.length; i++) {
             close[i].addEventListener("click", closingDiv, false);
         }
+
     }
 
     //remove food
@@ -83,6 +84,7 @@ $( document ).ready(function() {
         var findBox = el.target.parentNode.parentNode;
             findBox.remove();
             calculatePrice();
+            lengthCheck();
     }
 // calculating price
     function calculatePrice() {
@@ -106,15 +108,18 @@ $( document ).ready(function() {
 
     //mobile version footer(cart)
 
+    rightWrap.addEventListener("click", changec, false);
 
-    // rightWrap.addEventListener("click", changec, false);
-    //
-    // function changec() {
-    // if (this.style.height == '' )
-    //     this.style.height = '60vh';
-    //     else {
-    //     this.style.height = ''
-    //     }
-    // }
+    function changec(e) {
+        this.classList.add('heightChange');
+    }
+
+    $('.mobileClose').click(function (e) {
+        e.stopPropagation();
+        if ($('.right-wrap').hasClass('heightChange')) {
+            $('.right-wrap').removeClass('heightChange');
+        }
+    })
+
 
 });//////// ENDS

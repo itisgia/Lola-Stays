@@ -296,12 +296,6 @@ main {
                 font-size: 13px;
                 color: black;
                 margin-left: 6%; }
-        .big-box .right-wrap .border-box .price-wrap ::-webkit-scrollbar {
-          width: 2px;
-          /* remove scrollbar space */ }
-        .big-box .right-wrap .border-box .price-wrap ::-webkit-scrollbar-thumb {
-          background: #D18D88;
-          border-radius: 10px; }
         .big-box .right-wrap .border-box .price-wrap .total {
           position: absolute;
           left: 0;
@@ -315,6 +309,8 @@ main {
               font-family: "Hind Guntur", sans-serif;
               font-size: 22px;
               color: black; }
+          .big-box .right-wrap .border-box .price-wrap .total .mobileClose {
+            display: none; }
       .big-box .right-wrap .border-box a {
         text-decoration: none; }
       .big-box .right-wrap .border-box button {
@@ -330,6 +326,17 @@ main {
         height: 22px;
         background-color: red;
         display: block; }
+
+.heightChange {
+  height: 60vh !important; }
+
+::-webkit-scrollbar {
+  width: 2px;
+  /* remove scrollbar space */ }
+
+::-webkit-scrollbar-thumb {
+  background: #D18D88;
+  border-radius: 10px; }
 
 .main-scroll {
   height: 70vh;
@@ -478,6 +485,16 @@ main {
         width: 50%;
         float: right !important;
         position: relative !important; }
+      .big-box .right-wrap .price-wrap .mobileClose {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        margin-bottom: 13%; }
+        .big-box .right-wrap .price-wrap .mobileClose span {
+          border: 1px solid white;
+          border-radius: 50px;
+          padding: 3px 31px; }
   .big-box .product-wrap {
     border: none; }
     .big-box .product-wrap img {
