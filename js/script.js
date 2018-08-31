@@ -50,24 +50,22 @@ $( document ).ready(function() {
 
   // adding food lists into the right div box
     function addFoodList(){
-        console.log('click 1 line 52');
         var pricing = getPrice[0].innerHTML;
         var priceVal = pricing.replace(/[^0-9.]/g, "");
         var getting = priceVal * getValue;
         var newLine = '<div class="orderBox">';
             newLine += '	 <p class="nameOfFood">';
-            newLine +=          look["0"].outerText +' x '+ getValue  ;
+            newLine +=          look["0"].textContent +' x '+ getValue  ;
             newLine +='             $ '
             newLine += '            <span class = subtotal>'
             newLine +=                  parseFloat(getting);
             newLine += '            </span>'
             newLine += '    </p>';
-            newLine += '    <button class= "closeBtn">';
+            newLine += '    <div class= "closeBtn">';
             newLine += '        <i class="fa fa-times closing"></i>'
-            newLine += '    </button>'
+            newLine += '    </div>'
             newLine += '</div>';
         $('.foodList').append(newLine);
-        console.log( look["0"].outerText);
         deleteItem ();
         lengthCheck();
     } // fires in line 44
@@ -81,6 +79,7 @@ $( document ).ready(function() {
 
     //remove food
     function closingDiv(el) {
+        console.log('clickedd');
         var findBox = el.target.parentNode.parentNode;
             findBox.remove();
             calculatePrice();
@@ -97,7 +96,6 @@ $( document ).ready(function() {
     }
 
     function  lengthCheck() {
-        console.log($('.nameOfFood').length);
         $('.amount').html('(' + $('.nameOfFood').length + ')')
     }
     //call a staff

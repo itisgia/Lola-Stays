@@ -286,14 +286,13 @@ main {
               font-family: "Hind Guntur", sans-serif;
               font-size: 15px;
               color: black; }
-            .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox button, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox button {
-              width: 15px;
-              height: 15px;
+            .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox .closeBtn, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox .closeBtn {
+              margin-top: 4% !important;
               background-color: transparent;
               margin-top: 0;
               flex: 1;
               outline: none; }
-              .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox button .fa, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox button .fa {
+              .big-box .right-wrap .border-box .price-wrap .order-list .foodList .orderBox .closeBtn .fa, .big-box .right-wrap .border-box .price-wrap .total .foodList .orderBox .closeBtn .fa {
                 font-size: 13px;
                 color: black;
                 margin-left: 6%; }
