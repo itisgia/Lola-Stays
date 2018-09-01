@@ -578,6 +578,9 @@ main {
     width: 28% !important; }
 
   .product-wrap {
-    width: 90%; } }
+    width: 90%; }
+
+  .main-scroll {
+    height: 63vh !important; } }
 
 /*# sourceMappingURL=style.css.map */
