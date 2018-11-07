@@ -441,6 +441,7 @@ main{
 	header{
 		height: auto;
 	}
+
 	.option{
 		.lang{
 			button{
@@ -482,7 +483,8 @@ main{
 	    	font-size: 2em;
 			}
 			span{
-				font-size: 21px;
+				font-size: 11px;
+				width: 50%;
 			}
 
 		}
@@ -504,6 +506,7 @@ main{
 		}
 	}
 	.indication{
+		padding-bottom: 0;
 		.dot{
 				height: 15px;
 	    		width: 15px;
@@ -511,16 +514,20 @@ main{
 				.type {
 					margin: 0px 14px !important;
 				}
+		p {
+			font-size: 10px;
+		}
 	}
 	.big-box{
 		.left-wrap{
 			width: 100%;
 			margin: 0 auto;
-			.moring,.all,.drink{
+
 				h2{
-				font-size: 22px;
+				font-size: 19px !important;
+				padding-bottom: 0 !important;
 				}
-			}
+
 			.drink{
 				padding-bottom: 43px;
 			}
@@ -545,6 +552,7 @@ main{
 			.border-box{
 				margin-top: 5%;
 			}
+
 			i{
 				color: white;
 				margin-left: 12px;

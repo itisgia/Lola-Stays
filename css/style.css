@@ -417,7 +417,8 @@ main {
   .header .topnav i {
     font-size: 2em; }
   .header .topnav span {
-    font-size: 21px; }
+    font-size: 11px;
+    width: 50%; }
 
   #menu {
     display: flex;
@@ -428,17 +429,22 @@ main {
     #menu .bottomletter {
       font-size: 13px !important; }
 
-  .indication .dot {
-    height: 15px;
-    width: 15px; }
-  .indication .type {
-    margin: 0px 14px !important; }
+  .indication {
+    padding-bottom: 0; }
+    .indication .dot {
+      height: 15px;
+      width: 15px; }
+    .indication .type {
+      margin: 0px 14px !important; }
+    .indication p {
+      font-size: 10px; }
 
   .big-box .left-wrap {
     width: 100%;
     margin: 0 auto; }
-    .big-box .left-wrap .moring h2, .big-box .left-wrap .all h2, .big-box .left-wrap .drink h2 {
-      font-size: 22px; }
+    .big-box .left-wrap h2 {
+      font-size: 19px !important;
+      padding-bottom: 0 !important; }
     .big-box .left-wrap .drink {
       padding-bottom: 43px; }
     .big-box .left-wrap img {
