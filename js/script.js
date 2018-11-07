@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    
     var look;
     var getValue;
     var getPrice;

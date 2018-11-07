@@ -399,8 +399,7 @@ main {
       font-size: 34px; }
 
   .index-btn {
-    font-size: 28px;
-    padding: 12px 30px; }
+    background-color: red; }
 
   body {
     background-size: 400px; }
@@ -547,26 +546,27 @@ main {
 
   .right-wrap {
     margin-top: 2% !important; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   header {
     height: auto; }
+
+  body {
+    zoom: 0.9 !important;
+    -moz-transform: scale(0.9) !important;
+    -moz-transform-origin: 0 0 !important;
+    -o-transform: scale(0.9) !important;
+    -o-transform-origin: 0 0 !important;
+    -webkit-transform: scale(0.9) !important;
+    -webkit-transform-origin: 0 0 !important;
+    transform: scale(0.9) !important;
+    transform-origin: 0 0 !important; }
 
   main {
     height: 64vh; }
 
-  .header-box {
-    margin-top: 18% !important; }
-
-  .topnav i {
-    font-size: 3em; }
-  .topnav span {
-    font-size: 21px !important; }
-
-  #menu {
-    font-size: 26px !important; }
-
   .indication {
-    padding: 7px 0px; }
+    padding-top: 18px;
+    padding-bottom: 23px; }
 
   .right-wrap {
     margin-top: 1% !important; }
